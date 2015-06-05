@@ -1,0 +1,590 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/js-test-driver/wiki/Gateway" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"token": null, "projectHomeUrl": "/p/js-test-driver", "profileUrl": null, "assetVersionPath": "http://www.gstatic.com/codesite/ph/8599073060794244502", "assetHostPath": "http://www.gstatic.com/codesite/ph", "domainName": null, "relativeBaseUrl": "", "loggedInUserEmail": null, "projectName": "js-test-driver"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>Gateway - 
+ js-test-driver -
+ 
+ Describes JsTestDriver's request gateway and how to configure it. - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8599073060794244502/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8599073060794244502/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/gitchanges/basic?path=/Gateway.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/8599073060794244502/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FGateway&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FGateway" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="http://www.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=js-test-driver">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">Gateway</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Describes JsTestDriver's request gateway and how to configure it.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jun  6 03:07:42 2012">
+ Jun 6, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118380232301266653208/">corbinrs...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Introduction"></a>Introduction<a href="#Introduction" class="section_anchor"></a></h1><p>JsTestDriver has the ability to gateway unrecognized requests to servers-under-test. You may find this useful for larger integration tests that need to communicate with a backend server. </p><h1><a name="Details"></a>Details<a href="#Details" class="section_anchor"></a></h1><p>To activate the gateway, add a <tt>gateway</tt> section (or <tt>proxy</tt> for older versions of JsTestDriver up to 1.3.2) to your jsTestDriver.conf file: </p><pre class="prettyprint">gateway:
+ - {matcher: &quot;/matchedPath&quot;, server: &quot;http://localhost:7000&quot;}
+ - {matcher: &quot;/wildcardPath/*&quot;, server: &quot;http://localhost:8000/&quot;}
+ - {matcher: &quot;*&quot;, server: &quot;http://localhost:9000&quot;}</pre><p>The above configuration sends requests to <tt>/matchedPath</tt> along to the <tt>http://localhost:7000</tt>, requests to <tt>/wildcardPath/{anything}</tt> along to <tt>http://localhost:8000/{anything}</tt>, and any remaining requests to <tt>{anything}</tt> along to <tt>http://localhost:9000/{anything}</tt>. </p><p>The <tt>gateway</tt> (or <tt>proxy</tt>) entry of the configuration file is a list of matchers mapped to server addresses (including an optional path). When handling unknown requests, JsTestDriver iterates sequentially through the list of matchers, finds the first matching pattern, and forwards the request along to the server URL, appending any extra path information matched by a wildcard. </p><p>Matcher patterns come in three varieties: <ul><li>Literal matchers, e.g. <tt>/matchedPath</tt> </li><li>Suffix matchers, e.g. <tt>/wildcardPath/*</tt> </li><li>Prefix matchers, e.g. <tt>*.pdf</tt> </li></ul></p><h1><a name="Path_Collisions"></a>Path Collisions<a href="#Path_Collisions" class="section_anchor"></a></h1><p>Sometimes your server-under-test may handle HTTP requests on URLs that JsTestDriver already handles. For instance, you may handle requests on <tt>/cache</tt> that are vital to your service and that you would like to test. </p><p>Use the following flag <tt>--serverHandlerPrefix jstd</tt> to prefix all JsTestDriver-specific request paths with <tt>/jstd</tt> so they won&#x27;t collide with your service. </p><p>You have to use this flag when starting server and running tests both. </p><p>List of all paths used by JsTestDriver can be found <a href="http://code.google.com/p/js-test-driver/source/browse/trunk/JsTestDriver/src/com/google/jstestdriver/server/handlers/JstdHandlersModule.java#119" rel="nofollow">here</a>. </p><h1><a name="Security"></a>Security<a href="#Security" class="section_anchor"></a></h1><p>Be sure you control or trust the servers that you enter into your <tt>gateway</tt> (or <tt>proxy</tt>) configuration entry. The gateway bypasses the browser&#x27;s same-origin policy and forwards the requests almost verbatim. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/moali11532/">moali11532</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Dec 31 10:25:51 2011">Dec 31, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>i use just mobile nokia6500slide for connect to internet please help me by java jar type softwar for my mobile support </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/103549152368889012661/">guillaum...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jul 17 12:32:04 2012">Jul 17, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Does anybody get this working? My gateway are promptly ignored... </p><p>Set-up:  Windows 7, Webstorm 4.0.3, Chrome 20.0.1132.57, JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>?-1.3.4  </p><p>JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> server running at <a href="http://localhost:9876" rel="nofollow">http://localhost:9876</a>  </p><p>Proxy server running at <a href="http://localhost:6000" rel="nofollow">http://localhost:6000</a> </p><p>Test: </p><pre class="prettyprint">TestCase(&quot;JstdGatewayTest&quot;, {
+
+test_ajax : function (queue) {
+    &#x27;use strict&#x27;;
+    var request = $.ajax({
+    type: &quot;GET&quot;, url: &quot;/gateway&quot;
+});
+}
+});</pre><p>Conf:  </p><pre class="prettyprint">gateway: - {matcher: &quot;*&quot;, server: &quot;http://localhost:6000&quot;}</pre><p>Result: GET <a href="http://localhost:9876/gateway" rel="nofollow">http://localhost:9876/gateway</a> 502 (Bad Gateway)  </p><p>I would have expected the request to be routed to <a href="http://localhost:6000/gateway" rel="nofollow">http://localhost:6000/gateway</a>. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101409115938185205736/">urban.an...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Dec  5 04:32:55 2013">Dec 5, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Is it possible to force DOC-type/document mode throu this? need to force document mode to IE8 on a lokal IE9 installation </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muaraang...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri May  1 00:02:31 2015">May 1, 2015</span>
+ <div>
+<div class="commentcontent">
+<p><a href="http://anekajaringmurah.blogspot.com/" rel="nofollow">http://anekajaringmurah.blogspot.com/</a> <a href="http://pusatjaringmurah.blogspot.com/" rel="nofollow">http://pusatjaringmurah.blogspot.com/</a> <a href="http://anekajaringpengaman.blogspot.com/" rel="nofollow">http://anekajaringpengaman.blogspot.com/</a> <a href="http://agenjaringpengaman.blogspot.com/" rel="nofollow">http://agenjaringpengaman.blogspot.com/</a> <a href="http://jaringpengamanfutsal.blogspot.com/" rel="nofollow">http://jaringpengamanfutsal.blogspot.com/</a> <a href="http://jaring-pengamanmurah.blogspot.com/" rel="nofollow">http://jaring-pengamanmurah.blogspot.com/</a> <a href="http://jaringcenter.blogspot.com/" rel="nofollow">http://jaringcenter.blogspot.com/</a> <a href="http://agenjaringjakata.blogspot.com/" rel="nofollow">http://agenjaringjakata.blogspot.com/</a> <a href="http://jualjaringpengamanmurah.blogspot.com/" rel="nofollow">http://jualjaringpengamanmurah.blogspot.com/</a> <a href="http://jaringsafetyjakarta.blogspot.com/" rel="nofollow">http://jaringsafetyjakarta.blogspot.com/</a> <a href="http://jaringpengaman-murah.blogspot.com/" rel="nofollow">http://jaringpengaman-murah.blogspot.com/</a> <a href="http://jaringmurah.blogspot.com/" rel="nofollow">http://jaringmurah.blogspot.com/</a> <a href="http://jaring-murah.blogspot.com/" rel="nofollow">http://jaring-murah.blogspot.com/</a> <a href="http://jaringpengamanmurah.blogspot.com/" rel="nofollow">http://jaringpengamanmurah.blogspot.com/</a> <a href="http://jaringbangunan.blogspot.com/" rel="nofollow">http://jaringbangunan.blogspot.com/</a> <a href="http://agenjaringsafety.blogspot.com/" rel="nofollow">http://agenjaringsafety.blogspot.com/</a> <a href="http://sentral-jaring.blogspot.com/" rel="nofollow">http://sentral-jaring.blogspot.com/</a> <a href="http://sentraljaring.blogspot.com/" rel="nofollow">http://sentraljaring.blogspot.com/</a> <a href="http://tokojaringpengaman.blogspot.com/" rel="nofollow">http://tokojaringpengaman.blogspot.com/</a> <a href="http://pusatjaringjakarta.blogspot.com/" rel="nofollow">http://pusatjaringjakarta.blogspot.com/</a> <a href="http://tokojaringpengamanmurah.blogspot.com/" rel="nofollow">http://tokojaringpengamanmurah.blogspot.com/</a> <a href="http://jualjaringsafetymurah.blogspot.com/" rel="nofollow">http://jualjaringsafetymurah.blogspot.com/</a> <a href="https://pancasamudera.wordpress.com/" rel="nofollow">https://pancasamudera.wordpress.com/</a> <a href="https://pasangjaringfutsal.wordpress.com/" rel="nofollow">https://pasangjaringfutsal.wordpress.com/</a> <a href="https://jualtambangmurah.wordpress.com/" rel="nofollow">https://jualtambangmurah.wordpress.com/</a> <a href="https://tokojaring.wordpress.com/" rel="nofollow">https://tokojaring.wordpress.com/</a> <a href="https://jualjaringfutsal.wordpress.com/" rel="nofollow">https://jualjaringfutsal.wordpress.com/</a> <a href="https://jaringfutsal.wordpress.com/" rel="nofollow">https://jaringfutsal.wordpress.com/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FGateway&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FGateway"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="Gateway" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="http://www.gstatic.com/codesite/ph/8599073060794244502/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8599073060794244502/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8599073060794244502/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/8599073060794244502/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

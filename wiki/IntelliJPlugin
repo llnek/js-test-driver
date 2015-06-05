@@ -1,0 +1,1227 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/js-test-driver/wiki/IntelliJPlugin" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"loggedInUserEmail": null, "relativeBaseUrl": "", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "domainName": null, "profileUrl": null, "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/8599073060794244502", "token": null, "projectName": "js-test-driver", "projectHomeUrl": "/p/js-test-driver"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>IntelliJPlugin - 
+ js-test-driver -
+ 
+ How to use the IntelliJ Plugin for JsTestDriver. - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/gitchanges/basic?path=/IntelliJPlugin.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FIntelliJPlugin&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FIntelliJPlugin" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="https://ssl.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=js-test-driver">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">IntelliJPlugin</span>
+ &nbsp;
+ <div> 
+ 
+ <i>How to use the IntelliJ Plugin for JsTestDriver.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jun  6 03:07:42 2012">
+ Jun 6, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118380232301266653208/">corbinrs...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p><strong>JsTestDriver IntelliJ plugin</strong> allows you to enjoy <a href="http://code.google.com/p/js-test-driver/wiki/DesignPrinciples" rel="nofollow">all the benefits of JsTestDriver</a> right from the comfort of your IDE (WebStorm, PhpStorm, IntelliJ IDEA, RubyMine, PyCharm or AppCode). </p><p>It is the open-source project under the terms of <a href="http://www.apache.org/licenses/LICENSE-2.0" rel="nofollow">Apache License 2.0</a>. </p><h3><a name="Features"></a>Features<a href="#Features" class="section_anchor"></a></h3><ul><li>starting and stopping the server; </li><li>running and rerunning tests; </li><li>filtering and viewing test results, navigation from results to source code; </li><li>jumping from JavaScript exception stacktrace to source code; </li><li>support for JsTestDriver configuration file: syntax and error highlighting, basic completion, navigation to referenced files; </li><li>capturing messages sent to <tt>console.log()</tt>; </li><li>support for Jasmine, QUnit and JsTestDriver built-in assertion frameworks: </li><ul><li>quick-fixes for enabling global symbol reference resolving for each assertion framework (if you have QUnit or Jasmine tests in a project, you will be prompted to install the corresponding <a href="http://code.google.com/p/js-test-driver/wiki/XUnitCompatibility" rel="nofollow">adapter</a>); </li><li>contextual code generation actions (Alt+Insert) for creating new tests, setup and teardown methods for each assertion framework; </li><li><a href="http://code.google.com/p/js-test-driver/wiki/HtmlDoc" rel="nofollow">declarative HTML injection</a> support for JsTestDriver built-in assertion framework. </li></ul></ul><h3><a name="Installation"></a>Installation<a href="#Installation" class="section_anchor"></a></h3><p>Please visit <a href="http://confluence.jetbrains.net/display/WI/Installation+of+JsTestDriver+IntelliJ+plugin" rel="nofollow">Installation</a> page. </p><h3><a name="Getting_started"></a>Getting started<a href="#Getting_started" class="section_anchor"></a></h3><p>Please visit <a href="http://confluence.jetbrains.net/display/WI/Getting+Started+with+JsTestDriver+IntelliJ+plugin" rel="nofollow">Getting Started</a> page. </p><h3><a name="Releases_&amp;_Changelog"></a>Releases &amp; Changelog<a href="#Releases_&amp;_Changelog" class="section_anchor"></a></h3><p>You can check out the <a href="http://plugins.intellij.net/plugin/?id=4468" rel="nofollow">plugin page</a> for more information about the releases. </p><h3><a name="Roadmap"></a>Roadmap<a href="#Roadmap" class="section_anchor"></a></h3><p>You can find features that we are planning to implement in the future on the <a href="http://confluence.jetbrains.net/display/WI/JsTestDriver+IntelliJ+plugin+roadmap" rel="nofollow">Roadmap</a> page. </p><h3><a name="Issue_tracker"></a>Issue tracker<a href="#Issue_tracker" class="section_anchor"></a></h3><p>If you&#x27;ve found a bug, a glitch or anything that doesn&#x27;t work well, please file an issue in the <a href="http://youtrack.jetbrains.net/issues/WI#newissue=yes" rel="nofollow">WebStorm/PhpStorm project issue tracker</a> (select <i>&quot;Plugin: JsTestDriver&quot;</i> subsystem when creating an issue). </p><p>Please don&#x27;t file an issue in the <a href="http://code.google.com/p/js-test-driver/issues/list?q=label:IntelliJ" rel="nofollow">http://code.google.com/p/js-test-driver/issues/list?q=label:IntelliJ</a>. Those bugs are handled normally, but it&#x27;s an old way. </p><h3><a name="For_developers"></a>For developers<a href="#For_developers" class="section_anchor"></a></h3><p>If you are considering participation in the development of the plugin, or just going to build it yourself, please visit <a href="http://confluence.jetbrains.net/display/WI/Development+of+JsTestDriver+IntelliJ+plugin" rel="nofollow">Development</a> page. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111072289960745325342/">ireney.b...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Nov 18 00:17:59 2010">Nov 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi guys, I have been using the Eclipse plugin, and just have been moving over to WebStorm<a href="/p/js-test-driver/w/edit/WebStorm">?</a> 2 EAP.  I enjoyed the ability to run my tests on every file save ... is this possible in WebStorm<a href="/p/js-test-driver/w/edit/WebStorm">?</a>?  The Eclipse run configuration allowed this with a simple checkbox tick ... any plans to support this in WebStorm<a href="/p/js-test-driver/w/edit/WebStorm">?</a> also? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/aeagle22206/">aeagle22206</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Nov 21 10:37:27 2010">Nov 21, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>@Ireney: IntelliJ automatically saves your files, so you may as well use the keybinding for running the tests directly. Just replace ctrl-s (save) with shift-F10 (re-run) in your brain, and you&#x27;ll get exactly the same behavior you&#x27;re used to. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115704033890951218037/">ken.eger...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Dec 13 15:23:51 2010">Dec 13, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Does this plugin work with IntelliJ 10? I can get the server running and it&#x27;s green. I added src/main/js and src/test/js and put my javascript files in there. I then made a configuration file to point to: </p><p>load: <blockquote>- src/main/js/<strong>.js 
+- src/test/js/</strong>.js 
+</blockquote></p><p>I then made a configuration, pointed it to the configuration file (and I tried to either run inside the IDE or pointed to the server directly) but no tests run. It just does nothing at all. </p><p>Help? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100424590809584961369/">alexea...@google.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 14 09:55:09 2011">Jan 14, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>@Ken: make sure you&#x27;ve got the most recent version, which shouldn&#x27;t have a Java dependency. It uses a more generic way to launch the test runner. It works for me in IDEA 10. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116286094491030824286/">flah...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 28 10:58:27 2011">Jan 28, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Can the IDEA plugin accept params/flags? I need to set the --basePath and --config flags.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/113345723908947763573/">monkeybo...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Feb 26 08:26:42 2011">Feb 26, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>hi, noob question :o) </p><p>&quot;Now just launch that config&quot; - can you provide more detail - can you do this from the IDE or do you need to use the command line? </p><p>thanks </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100643112690266408268/">anton.ne...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Apr  4 20:39:50 2011">Apr 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>It seems that plugin is broken in PHPStorm 2.0? There is an exception on the start of the project... </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115902859125486919691/">Sergey.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May  4 08:39:19 2011">May 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>@Anton: Please update JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>-plugin from plugin repository. Fixed version is already there. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/113793537304764146963/">plante...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jul 28 07:57:15 2011">Jul 28, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>So I tried checking out the source code to compile the IntelliJ-Plugin, but failed to find the newest version in SVN.  </p><p>Where is version 1.3.5? :-) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115902859125486919691/">Sergey.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug  1 02:46:43 2011">Aug 1, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Version 1.3.5 can be found at <a href="http://git.jetbrains.org/?p=idea/contrib.git;a=tree;f=JsTestDriver;h=57f655bfc53f67fa5259c211adffc01dd7e1d288;hb=HEAD" rel="nofollow">http://git.jetbrains.org/?p=idea/contrib.git;a=tree;f=JsTestDriver;h=57f655bfc53f67fa5259c211adffc01dd7e1d288;hb=HEAD</a> . </p><p>$ git clone git://git.jetbrains.org/idea/contrib.git </p><p>Plugin source code is being moving to JetBrains<a href="/p/js-test-driver/w/edit/JetBrains">?</a> repo. We need to resolve a few problems to complete the moving. </p><p>If you want to sumbit a patch before moved is completed, you can create an issue at <a href="http://code.google.com/p/js-test-driver/issues/list" rel="nofollow">http://code.google.com/p/js-test-driver/issues/list</a> and attach your patch to it. </p><p>After moving is done wiki page will be updated. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/105227108143605769636/">mistae...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Sep 18 07:22:48 2011">Sep 18, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>May I ask what is the status of the repo transition? </p><p>I can&#x27;t get the source from the jetbrains repo to build against IDEA 10.5.2. It seems that the HEAD is built against an IDEA OpenAPI version &gt; 10.5.2? Is that observation correct? </p><p>What revision is the latest plugin release (1.3.5)? </p><p>Thank you! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115902859125486919691/">Sergey.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 20 08:02:14 2011">Sep 20, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Hi! </p><p>Repo transition is not finished yet. </p><p>The latest plugin release version is 1.3.5. I&#x27;ve updated plugin&#x27;s source code in JetBrains<a href="/p/js-test-driver/w/edit/JetBrains">?</a> git repository, so now plugin can be built against IDEA 10.5.2. </p><p>Now I am working on the next JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> plugin release. After that I&#x27;ll focus on the repo transition. If you want to contribute, you can email me a patch or just describe your needs. </p><p>Any help is appreciated! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/105227108143605769636/">mistae...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 22 03:54:10 2011">Sep 22, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Thank you, Sergey! </p><p>The code from the jetbrains repo now compiles nicely against 10.5.2! </p><p>I also have a version of the plugin compiling against the trunk of the jstestdriver core. Unfortunately, since the jstd 1.3.2 release, there have been some breaking API changes. </p><p>I wonder if there are any future plans/strategies to keep the core library and the plugin in sync. I will drop you an email! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/114038222738608424306/">gsha...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 29 16:48:51 2011">Sep 29, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Would it be possible to configure how the auto-generated jstd files are generated for running Jasmine cases? </p><p>Our use case: We recently started adding Jasmine tests for a new feature we&#x27;re building. The feature we&#x27;re building has all the production JS files in a subdirectory of the project (e.g. project/production-js/tested-js/feature1. For future features, we&#x27;re planning to put the production JS files in a similar subdirectory (e.g. project/production-js/tested-js/feature2). All of the jasmine tests are in project/js-tests/spec/feature1. We&#x27;re planning something similar with future features (e.g. project/js-tests/spec/feature2) </p><p>The existing project has a ton of JS files all over the place, including project/production-js/. Unfortunately, there are no real tests for those JS files. In addition, some of the existing JS has DOM manipulation in it, which we don&#x27;t want to test in js-test-driver. </p><p>We can run all the tests in project/js-tests/spec/feature1 by configuring the jsTestDriver.conf appropriately and setting up an IntelliJ run configuration. Unfortunately, this takes close to 20 seconds for 500 or so tests. It would be nice to be able to run individual tests in IntelliJ instead. However, whenever we try to run individual tests cases, the auto-generated jstd file has all of the JS files in the project, even those we don&#x27;t want to test. It also includes JS files that are embedded in library jar files, which js-test-driver can&#x27;t read and blows up. </p><p>A potential solution would be to provide a configuration option in the plugin for where the production JS files would come from (i.e. everything under project/production-js/tested-js/). The run configuration would created the generated jstd with only those files, in addition to the file that contains the JS test that we&#x27;re trying to run. </p><p>If any of the above doesn&#x27;t make sense or if I can help out, please let me know. </p><p>Thanks, George Shakhnazaryan </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115902859125486919691/">Sergey.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 29 23:14:41 2011">Sep 29, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Hi George, </p><p>Thank you for the detailed report! Yes, there is a real need to configure a set of files/directories for a given file. Generally it&#x27;s an issue for WebStorm<a href="/p/js-test-driver/w/edit/WebStorm">?</a>, because it will let us improve reference resolving. I&#x27;ll try to investigate it. Anyway I have plans to improve jstd config automatic generation in a slightly another way. </p><p>-- Sergey Simonchik </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/109934099600941256315/">liquidri...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct 13 17:18:00 2011">Oct 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is it possible to debug the test cases within phpStorm using this plugin? I&#x27;m sorry I haven&#x27;t found any way to do this if there is. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115902859125486919691/">Sergey.S...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct 13 20:37:28 2011">Oct 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>No, it&#x27;s impossible to debug. This feature is planned. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100259934176913154777/">mcmahon...@us.saic.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Oct 14 09:10:42 2011">Oct 14, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Okay...so How DO I use JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> with IntelliJ when I have never used JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>. All this page has it how to install it, not use it. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100259934176913154777/">mcmahon...@us.saic.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Oct 14 12:48:34 2011">Oct 14, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>It&#x27;s been 3 hours, I&#x27;m looking at the Getting Started page which has little relevance to using the IntelliJ plugin. Through IntelliJ I have the serving running with Firefox captured. </p><p>But the Getting Started page states that the conf file will list the files to test and the files that will perform the tests. Yet the plugin has no conf file in the directory. I searched the hard drive that it is not there. </p><p>So how do I use this friggin plugin to test these files? You are not providing any kind of guidance just &quot;You can install it&quot;. </p><p>How does the plugin know what files to test if the plugin doesn&#x27;t have the conf file? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100424590809584961369/">alexea...@google.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Oct 17 09:23:23 2011">Oct 17, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>mcmahon: Sorry this wasn&#x27;t more clear. I&#x27;ll update this page to indicate that you should still follow the <a href="/p/js-test-driver/wiki/GettingStarted">GettingStarted</a> instructions (<a href="http://code.google.com/p/js-test-driver/wiki/GettingStarted" rel="nofollow">http://code.google.com/p/js-test-driver/wiki/GettingStarted</a>) to create the conf file.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/104530805364155486023/">stephen....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Feb 11 03:55:53 2012">Feb 11, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Jetbrains / IDEA users -- at the time of this writing, JetBrains<a href="/p/js-test-driver/w/edit/JetBrains">?</a> doesn&#x27;t support debugging JSTestDriver tests within IDE.  If you want to debug, you still would use chrome / firebug.  I&#x27;ve created a youtrack request for adding feature in IDE debugging.  Would appreciate your votes! </p><p><a href="http://youtrack.jetbrains.net/issue/IDEA-81226" rel="nofollow">http://youtrack.jetbrains.net/issue/IDEA-81226</a> </p><p>Thanks </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115279090262301716916/">davenels...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jun  7 14:49:47 2013">Jun 7, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Where are the sample files that are referenced in the Getting Started page? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muaraang...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri May  1 00:03:31 2015">May 1, 2015</span>
+ <div>
+<div class="commentcontent">
+<p><a href="http://anekajaringmurah.blogspot.com/" rel="nofollow">http://anekajaringmurah.blogspot.com/</a> <a href="http://pusatjaringmurah.blogspot.com/" rel="nofollow">http://pusatjaringmurah.blogspot.com/</a> <a href="http://anekajaringpengaman.blogspot.com/" rel="nofollow">http://anekajaringpengaman.blogspot.com/</a> <a href="http://agenjaringpengaman.blogspot.com/" rel="nofollow">http://agenjaringpengaman.blogspot.com/</a> <a href="http://jaringpengamanfutsal.blogspot.com/" rel="nofollow">http://jaringpengamanfutsal.blogspot.com/</a> <a href="http://jaring-pengamanmurah.blogspot.com/" rel="nofollow">http://jaring-pengamanmurah.blogspot.com/</a> <a href="http://jaringcenter.blogspot.com/" rel="nofollow">http://jaringcenter.blogspot.com/</a> <a href="http://agenjaringjakata.blogspot.com/" rel="nofollow">http://agenjaringjakata.blogspot.com/</a> <a href="http://jualjaringpengamanmurah.blogspot.com/" rel="nofollow">http://jualjaringpengamanmurah.blogspot.com/</a> <a href="http://jaringsafetyjakarta.blogspot.com/" rel="nofollow">http://jaringsafetyjakarta.blogspot.com/</a> <a href="http://jaringpengaman-murah.blogspot.com/" rel="nofollow">http://jaringpengaman-murah.blogspot.com/</a> <a href="http://jaringmurah.blogspot.com/" rel="nofollow">http://jaringmurah.blogspot.com/</a> <a href="http://jaring-murah.blogspot.com/" rel="nofollow">http://jaring-murah.blogspot.com/</a> <a href="http://jaringpengamanmurah.blogspot.com/" rel="nofollow">http://jaringpengamanmurah.blogspot.com/</a> <a href="http://jaringbangunan.blogspot.com/" rel="nofollow">http://jaringbangunan.blogspot.com/</a> <a href="http://agenjaringsafety.blogspot.com/" rel="nofollow">http://agenjaringsafety.blogspot.com/</a> <a href="http://sentral-jaring.blogspot.com/" rel="nofollow">http://sentral-jaring.blogspot.com/</a> <a href="http://sentraljaring.blogspot.com/" rel="nofollow">http://sentraljaring.blogspot.com/</a> <a href="http://tokojaringpengaman.blogspot.com/" rel="nofollow">http://tokojaringpengaman.blogspot.com/</a> <a href="http://pusatjaringjakarta.blogspot.com/" rel="nofollow">http://pusatjaringjakarta.blogspot.com/</a> <a href="http://tokojaringpengamanmurah.blogspot.com/" rel="nofollow">http://tokojaringpengamanmurah.blogspot.com/</a> <a href="http://jualjaringsafetymurah.blogspot.com/" rel="nofollow">http://jualjaringsafetymurah.blogspot.com/</a> <a href="https://pancasamudera.wordpress.com/" rel="nofollow">https://pancasamudera.wordpress.com/</a> <a href="https://pasangjaringfutsal.wordpress.com/" rel="nofollow">https://pasangjaringfutsal.wordpress.com/</a> <a href="https://jualtambangmurah.wordpress.com/" rel="nofollow">https://jualtambangmurah.wordpress.com/</a> <a href="https://tokojaring.wordpress.com/" rel="nofollow">https://tokojaring.wordpress.com/</a> <a href="https://jualjaringfutsal.wordpress.com/" rel="nofollow">https://jualjaringfutsal.wordpress.com/</a> <a href="https://jaringfutsal.wordpress.com/" rel="nofollow">https://jaringfutsal.wordpress.com/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FIntelliJPlugin&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FIntelliJPlugin"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="IntelliJPlugin" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

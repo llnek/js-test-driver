@@ -1,0 +1,1702 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/js-test-driver/wiki/ConfigurationFile" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"assetHostPath": "https://ssl.gstatic.com/codesite/ph", "loggedInUserEmail": null, "profileUrl": null, "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/8599073060794244502", "projectHomeUrl": "/p/js-test-driver", "relativeBaseUrl": "", "token": null, "projectName": "js-test-driver", "domainName": null};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>ConfigurationFile - 
+ js-test-driver -
+ 
+ Configuration file for test runner. - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/gitchanges/basic?path=/ConfigurationFile.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FConfigurationFile&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FConfigurationFile" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="https://ssl.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=js-test-driver">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">ConfigurationFile</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Configuration file for test runner.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jun  6 03:07:41 2012">
+ Jun 6, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118380232301266653208/">corbinrs...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Introduction"></a>Introduction<a href="#Introduction" class="section_anchor"></a></h1><p>Configuration file is written in <a href="http://www.yaml.org" rel="nofollow">YAML</a> and is used to tell the test runner which files to load to browser and in which order. By default the JsTestDriver looks for the configuration file in the current directory and with the name <tt>jsTestDriver.conf</tt>. You can use <tt>--config</tt> command line option to specify a different file. </p><p>Example: </p><pre class="prettyprint">server: http://localhost:4224
+
+load:
+  - src/*.js
+
+test:
+  - src-test/*.js
+
+exclude:
+ - uselessfile.js
+
+serve:
+ - css/main.css
+
+proxy:
+ - {matcher: &quot;*&quot;, server: &quot;http://localhost/whatever&quot;}
+
+plugin:
+ - name: &quot;coverage&quot;
+   jar: &quot;lib/jstestdriver/coverage.jar&quot;
+   module: &quot;com.google.jstestdriver.coverage.CoverageModule&quot;
+
+timeout: 90
+</pre><h2><a name="server:"></a><tt>server:</tt><a href="#server:" class="section_anchor"></a></h2><p>Specifies the default location of the server. This value can be overridden with a command line option <tt>--server</tt>. See <a href="/p/js-test-driver/wiki/CommandLineFlags">CommandLineFlags</a>.  </p><h2><a name="load:"></a><tt>load:</tt><a href="#load:" class="section_anchor"></a></h2><p>List of files to load to browser before the test can be run. We support globing with <tt>*</tt>. The files are loaded in the same order as specified in the configuration file or alphabetically if using globing. </p><p>You can declare external scripts by adding the http address of the script as a loadedable item. </p><h2><a name="test:"></a><tt>test:</tt><a href="#test:" class="section_anchor"></a></h2><p>A list of test sources to run. </p><h2><a name="exclude:"></a><tt>exclude:</tt><a href="#exclude:" class="section_anchor"></a></h2><p>Never load this file. Used in conjunction with globing and <tt>load</tt>. Useful saying load everything except these files. </p><h2><a name="serve:"></a><tt>serve:</tt><a href="#serve:" class="section_anchor"></a></h2><p>Load static files (images, css, html) so that they can be accessed on the same domain as jstd. </p><h2><a name="proxy:"></a><tt>proxy:</tt><a href="#proxy:" class="section_anchor"></a></h2><p>Set jstd to behave as proxy. See <a href="http://code.google.com/p/js-test-driver/wiki/Proxy" rel="nofollow">proxy</a>. </p><h2><a name="plugin:"></a><tt>plugin:</tt><a href="#plugin:" class="section_anchor"></a></h2><p>Load jstd plugin. See <a href="http://code.google.com/p/js-test-driver/wiki/Plugins" rel="nofollow">plugins</a>. </p><h2><a name="timeout:"></a><tt>timeout:</tt><a href="#timeout:" class="section_anchor"></a></h2><p>Timeout in seconds. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118443074580337817235/">tomasz.c...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Dec 17 03:45:33 2009">Dec 17, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to load an external scripts ? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/fcamel@gmail.com/">fcamel@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 13 08:09:06 2010">Apr 13, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Can it load files in &quot;../x/&quot;? Thanks. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/110697723386564676979/">halle...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jul  9 15:24:09 2010">Jul 9, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>From what I can see the web server component does not support paths with &quot;../&quot;.  But it looks like you can pass a --basePath option when running the jar to load files relative to a parent directory. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111719613748698308408/">charlie...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug  2 03:56:23 2010">Aug 2, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to include and exclue files recursively? </p><p>E.g.: </p><p>load: <blockquote>- src/<strong> 
+</blockquote></strong></p><p>exclude: <blockquote>- .svn 
+</blockquote></p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115136949141570059401/">didkobr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 22 03:36:40 2010">Dec 22, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>how can I load jsp files containing javascript in script tags? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112545557746917364228/">eric...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar 18 12:11:31 2011">Mar 18, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a recommended way to integrate JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> with Closure Library? First, it&#x27;s a pain to depend on each Closure directory (or even each directory of my own source). Second, I have to order the dependencies properly. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/106412877363011117782/">sharif.m...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jun  6 06:27:43 2011">Jun 6, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>How exactly does the serve directive work? I&#x27;ve added the it as detailed above but none of the css is ever applied. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/104741599826585461721/">stevelto...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jun  8 09:47:14 2011">Jun 8, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I have managed to install and apply some tests in jsTestDriver on eclipse, but there is a very unusual flaw in the output. It displays all the tests in a jumbled order that the tests were created? For example: If I write: </p><p><a href="/p/js-test-driver/wiki/TestCase">TestCase</a>(&#x27;Hello World 123&#x27;,{ <blockquote>,&quot;test - Hello&quot;:function(){assertEquals(&#x27;Hello&#x27;,&#x27;Hello&#x27;);} 
+,&quot;test - World&quot;:function(){assertEquals(&#x27;World&#x27;,&#x27;World&#x27;);} 
+,&quot;test - 1&quot;:function(){assertEquals(&#x27;1&#x27;,&#x27;1&#x27;);} 
+,&quot;test - 2&quot;:function(){assertEquals(&#x27;2&#x27;,&#x27;2&#x27;);} 
+,&quot;test - 3&quot;:function(){assertEquals(&#x27;3&#x27;,&#x27;3&#x27;);} 
+</blockquote>}); </p><p>Then the output is: </p><p>Hello World 123 <blockquote>test - World 
+test - 1 
+test - Hello 
+test - 2 
+test - 3 
+</blockquote></p><p>Can I change the order of the display with the conf file? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116687255591840883627/">johnanth...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 20 05:02:36 2011">Sep 20, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>serve files can be called at runtime with the prefix: </p><p>/test/ </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/117998797546161903432/">toby.d...@tagman.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Nov  3 11:04:10 2011">Nov 3, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>is there a way of passing config info that the test can pick up such as an environment variable. would be helpful in some cases to have the test perform conditional behaviour based on it rather than having separate test configs. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111566395964125502623/">pvank...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 31 05:56:12 2012">Jan 31, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Note that you cannot use https:// in the load section. </p><p>load: <blockquote>- src/main/webapp/js/<strong>.js 
+- <a href="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" rel="nofollow">https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</a> &lt;-- Won&#x27;t work 
+- <a href="http://github.com/janl/mustache.js/raw/master/mustache.js" rel="nofollow">http://github.com/janl/mustache.js/raw/master/mustache.js</a> &lt;-- Works fine 
+</blockquote></strong></p><p>It resolves this as /test/<a href="https://ajax.googleapis.etc" rel="nofollow">https://ajax.googleapis.etc</a> </p><p>I&#x27;m not sure if that should be a feature or not. It&#x27;s available as http:// so in this case an easy workaround. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/117159811485289812093/">aggieb...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 31 07:17:53 2012">Jan 31, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to use a variable for the server value? That way I can set the server in one file and for multiple configs use the variable to easily update it. Instead of changing loads of config files to the new server. </p><p>Also, it states that I can use --port to override the config file. But when my command line port value is different from the config file it shoots out an error that cannot be resolved without having both the config file and command line port argument be the vale value. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/smfoote/">smfoote</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar  9 13:41:42 2012">Mar 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m using the serve directive to mock an AJAX call: </p><pre class="prettyprint">serve:
+  - data.html</pre><p>In my test code I make a GET request for &#x27;data.html&#x27;. I&#x27;m getting a 200 repsonse, but the body of the response is empty. How do I get my data? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111707213989586678209/">i...@collabim.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Aug 26 14:28:44 2012">Aug 26, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Example how to get content of fixture defined in &quot;serve&quot; part of the config file. </p><p>First define the fixture in your config: </p><p>serve: <blockquote>- fixtures/testing-page.html 
+</blockquote></p><p>then define the getFixtureContent() function: </p><pre class="prettyprint">getFixtureContent: function(fixtureFileName) {
+	var url = &#x27;/test/fixtures/&#x27; + fixtureFileName;
+
+	request = new XMLHttpRequest();
+	request.open(&#x27;GET&#x27;, url, false); // synchronous!
+	request.send(null);
+
+	return request.responseText;
+}</pre><p>After that you can use the following code to obtain fixture content. </p><p>var html = getFixtureContent(&#x27;testing-page.html&#x27;); </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101308735810719132772/">agustin....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Sep 13 10:04:44 2012">Sep 13, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Hi is it possible to set the browser to execute at config file? I mean not passed the explorer as parameter --browser  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/106090769506218633555/">dmitry.b...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 12 11:19:22 2012">Dec 12, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>All questions and no answers - great stuff. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/113896956463909999528/">ottofoni...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jun 22 02:18:21 2013">Jun 22, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>huh... i got how to load static files with relative paths, you can also browse <a href="http://localhost:42224/" rel="nofollow">http://localhost:42224/</a> to see the files when the test are active. </p><p><strong>.conf </strong></p><pre class="prettyprint">serve:
+  - ../../relative/path/data.json</pre><p>test.js </p><pre class="prettyprint">...
+          var data = {};
+
+	  queue.call(&#x27;Fetch the data&#x27;, function(callbacks) {
+	    var received = callbacks.add(function(db) {
+	      data = db;
+	    });
+	    window.setTimeout(received, 10000); // timeout: 10 seconds
+	    $.get(&#x27;/test/full/path/from/os/data.json&#x27;, function(db) {
+	      received(db);
+	    }, &#x27;json&#x27;);
+	  });</pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">chris...@msn.com</span>,
+ 
+ </span>
+ <span class="date" title="Tue Oct 15 09:49:43 2013">Oct 15, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>############################################################ # +------------------------------------------------------+ # # |                       Notes                          | # # +------------------------------------------------------+ # ############################################################ </p><p># If you want to use special characters in this document, such as accented letters, you MUST save the file as UTF-8, not ANSI. # If you receive an error when Essentials loads, ensure that: #   - No tabs are present: YAML only allows spaces #   - Indents are correct: YAML hierarchy is based entirely on indentation #   - You have &quot;escaped&quot; all apostrophes in your text: If you want to write &quot;don&#x27;t&quot;, for example, write &quot;don&#x27;&#x27;t&quot; instead (note the doubled apostrophe) #   - Text with symbols is enclosed in single or double quotation marks </p><p># If you have problems join the Essentials help support channel: <a href="http://tiny.cc/EssentialsChat" rel="nofollow">http://tiny.cc/EssentialsChat</a> </p><p>############################################################ # +------------------------------------------------------+ # # |                 Essentials (Global)                  | # # +------------------------------------------------------+ # ############################################################ </p><p># A color code between 0-9 or a-f. Set to &#x27;none&#x27; to disable. ops-name-color: &#x27;4&#x27; </p><p># The character(s) to prefix all nicknames, so that you know they are not true usernames. nickname-prefix: &#x27;~&#x27; </p><p># Disable this if you have any other plugin, that modifies the displayname of a user. change-displayname: true </p><p># When this option is enabled, the (tab) player list will be updated with the displayname. # The value of change-displayname (above) has to be true. #change-playerlist: true </p><p># When essentialschat.jar isn&#x27;t used, force essentials to add the prefix and suffix from permission plugins to displayname. # This setting is ignored if essentialschat.jar is used, and defaults to &#x27;true&#x27;. # The value of change-displayname (above) has to be true. # Do not edit this setting unless you know what you are doing! #add-prefix-suffix: false </p><p># The delay, in seconds, required between /home, /tp, etc. teleport-cooldown: 0 </p><p># The delay, in seconds, before a user actually teleports.  If the user moves or gets attacked in this timeframe, the teleport never occurs. teleport-delay: 5 </p><p># The delay, in seconds, a player can&#x27;t be attacked by other players after they have been teleported by a command. # This will also prevent the player attacking other players. teleport-invulnerability: 4 </p><p># The delay, in seconds, required between /heal attempts. heal-cooldown: 180 </p><p># What to prevent from /i /give. # e.g item-spawn-blacklist: 46,11,10 item-spawn-blacklist: </p><p># Set this to true if you want permission based item spawn rules. # Note: The blacklist above will be ignored then. # Example permissions (these go in your permissions manager): #  - essentials.itemspawn.item-all #  - essentials.itemspawn.item-itemname<a href="/p/js-test-driver/w/edit/itemname">?</a> #  - essentials.itemspawn.item-itemid<a href="/p/js-test-driver/w/edit/itemid">?</a> #  - essentials.give.item-all #  - essentials.give.item-itemname<a href="/p/js-test-driver/w/edit/itemname">?</a> #  - essentials.give.item-itemid<a href="/p/js-test-driver/w/edit/itemid">?</a> #  - essentials.unlimited.item-all #  - essentials.unlimited.item-itemname<a href="/p/js-test-driver/w/edit/itemname">?</a> #  - essentials.unlimited.item-itemid<a href="/p/js-test-driver/w/edit/itemid">?</a> #  - essentials.unlimited.item-bucket # Unlimited liquid placing # # For more information, visit <a href="http://wiki.ess3.net/wiki/Command_Reference/ICheat#Item.2FGive" rel="nofollow">http://wiki.ess3.net/wiki/Command_Reference/ICheat#Item.2FGive</a> permission-based-item-spawn: false </p><p># Mob limit on the /spawnmob command per execution. spawnmob-limit: 10 </p><p># Shall we notify users when using /lightning? warn-on-smite: true </p><p># motd and rules are now configured in the files motd.txt and rules.txt. </p><p># When a command conflicts with another plugin, by default, Essentials will try to force the OTHER plugin to take priority. # Commands in this list, will tell Essentials to &#x27;not give up&#x27; the command to other plugins. # In this state, which plugin &#x27;wins&#x27; appears to be almost random. #  # If you have two plugin with the same command and you wish to force Essentials to take over, you need an alias. # To force essentials to take &#x27;god&#x27; alias &#x27;god&#x27; to &#x27;egod&#x27;. # See <a href="http://wiki.bukkit.org/Bukkit.yml#aliases" rel="nofollow">http://wiki.bukkit.org/Bukkit.yml#aliases</a> for more information </p><p>overridden-commands: #  - god #  - info </p><p># Disabling commands here will prevent Essentials handling the command, this will not affect command conflicts. # Commands should fallback to the vanilla versions if available. # You should not have to disable commands used in other plugins, they will automatically get priority. disabled-commands: #  - nick #  - clear </p><p># These commands will be shown to players with socialSpy enabled. # You can add commands from other plugins you may want to track or  # remove commands that are used for something you dont want to spy on. socialspy-commands: <blockquote>- msg 
+- w 
+- r 
+- mail 
+- m 
+- t 
+- whisper 
+- emsg 
+- tell 
+- er 
+- reply 
+- ereply 
+- email 
+- action 
+- describe 
+- eme 
+- eaction 
+- edescribe 
+- etell 
+- ewhisper 
+- pm 
+</blockquote></p><p># If you do not wish to use a permission system, you can define a list of &#x27;player perms&#x27; below. # This list has no effect if you are using a supported permissions system. # If you are using an unsupported permissions system, simply delete this section. # Whitelist the commands and permissions you wish to give players by default (everything else is op only). # These are the permissions without the &quot;essentials.&quot; part. player-commands: <blockquote>- afk 
+- afk.auto 
+- back 
+- back.ondeath 
+- balance 
+- balance.others 
+- balancetop 
+- build 
+- chat.color 
+- chat.format 
+- chat.shout 
+- chat.question 
+- clearinventory 
+- compass 
+- depth 
+- delhome 
+- getpos 
+- geoip.show 
+- help 
+- helpop 
+- home 
+- home.others 
+- ignore 
+- info 
+- itemdb 
+- kit 
+- kits.tools 
+- kits.dtools 
+- kits.op 
+- list 
+- mail 
+- mail.send 
+- me 
+- motd 
+- msg 
+- msg.color 
+- nick 
+- near 
+- pay 
+- ping 
+- protect 
+- r 
+- rules 
+- realname 
+- seen 
+- sell 
+- sethome 
+- setxmpp 
+- signs.create.protection 
+- signs.create.trade 
+- signs.break.protection 
+- signs.break.trade 
+- signs.use.balance 
+- signs.use.buy 
+- signs.use.disposal 
+- signs.use.enchant 
+- signs.use.free 
+- signs.use.gamemode 
+- signs.use.heal 
+- signs.use.info 
+- signs.use.kit 
+- signs.use.mail 
+- signs.use.protection 
+- signs.use.repair 
+- signs.use.sell 
+- signs.use.time 
+- signs.use.trade 
+- signs.use.warp 
+- signs.use.weather 
+- spawn 
+- suicide 
+- time 
+- tpa 
+- tpaccept 
+- tpahere 
+- tpdeny 
+- warp 
+- warp.list 
+- world 
+- worth 
+- xmpp 
+</blockquote></p><p># Note: All items MUST be followed by a quantity! # All kit names should be lower case, and will be treated as lower in permissions/costs. # Syntax: - itemID[:DataValue<a href="/p/js-test-driver/w/edit/DataValue">?</a>/Durability] Amount [Enchantment:Level].. [itemmeta:value]... # For Item meta information visit <a href="http://wiki.ess3.net/wiki/Item_Meta" rel="nofollow">http://wiki.ess3.net/wiki/Item_Meta</a> # &#x27;delay&#x27; refers to the cooldown between how often you can use each kit, measured in seconds. # For more information, visit <a href="http://wiki.ess3.net/wiki/Kits" rel="nofollow">http://wiki.ess3.net/wiki/Kits</a> kits: <blockquote>spawner: 
+<blockquote>delay: 31536000 
+items: 
+<blockquote>- 52 1 
+</blockquote></blockquote>exp: 
+<blockquote>delay: 86400 
+items: 
+<blockquote>- 384 128 
+</blockquote></blockquote>ninja: 
+<blockquote>delay: 43200 
+items: 
+<blockquote>- 373:8270 2 
+- 373:8226 3 
+- 373:16452 2 
+- 373:8257 3 
+- 373:16456 2 
+- 267 1 fireaspect:3 Sharpness:3 
+- 368 4 
+</blockquote></blockquote>cowboy: 
+<blockquote>delay: 86400 
+items: 
+<blockquote>- 383:100 6 
+- 329 6 
+- 420 6 
+- 396 12 
+- 418 2 
+- 417 4 
+</blockquote></blockquote>member: 
+<blockquote>delay: 43200 
+items: 
+<blockquote>- 306 1 0:2 
+- 307 1 0:2 
+- 308 1 0:2 
+- 309 1 0:2 
+- 297 25 
+- 267 1 34:2 16:2 
+- 258 1 34:2 32:2 
+- 257 1 34:2 32:2 
+- 256 1 34:2 32:2 
+- 292 1 34:2 32:2 
+- 322:0 5 
+</blockquote></blockquote>sponsor: 
+<blockquote>delay: 64800 
+items: 
+<blockquote>- 306 1 0:3 4:2 
+- 307 1 0:3 4:2 
+- 308 1 0:3 4:2 
+- 309 1 0:3 4:2 
+- 267 1 16:3 19:3 
+- 261 1 51:2 49:2 50:2 
+- 262 1 
+- 373:8194 1 
+</blockquote></blockquote>vip: 
+<blockquote>delay: 86400 
+items: 
+<blockquote>- 302 1 2:4 5:5 6:2 
+- 303 1 2:4 5:5 6:2 
+- 304 1 2:4 5:5 6:2 
+- 305 1 2:4 5:5 6:2 
+- 345 1 
+- 373:8262 2 
+- 347 1 
+- 354 1 
+- 173 128 
+- 400 48 
+- 359 1 34:4 33:1 
+- 256 1 34:5 32:5 
+- 257 1 34:5 32:5 
+- 258 1 34:5 32:5 
+- 346 1 34:1 
+</blockquote></blockquote>premium: 
+<blockquote>delay: 129600 
+items: 
+<blockquote>- 306 2 0:4 
+- 307 2 0:4 
+- 308 2 0:4 
+- 309 2 0:4 
+- 267 1 34:2 16:4 
+- 257 1 34:4 32:4 
+- 359 1 34:1 
+- 259 1 34:1 
+- 322:0 14 
+- 366 32 
+</blockquote></blockquote>op: 
+<blockquote>delay: 144000 
+items: 
+<blockquote>- 302 2 0:5 34:5 
+- 303 2 0:5 34:5 
+- 304 2 0:5 34:5 
+- 305 2 0:5 34:5 
+- 258 2 34:5 16:5 
+- 373:16386 2 
+- 322:0 12 
+</blockquote></blockquote>prospector: 
+<blockquote>delay: 172800 
+items: 
+<blockquote>- 306 1 34:2 4:6 
+- 307 1 34:2 4:6 
+- 308 1 34:2 4:6 
+- 309 1 34:2 4:6 
+- 261 1 49:2 
+- 262 256 
+- 373:16394 2 
+- 373:8257 2 
+</blockquote></blockquote>feildmarshal: 
+<blockquote>delay: 201600 
+items: 
+<blockquote>- 306 1 34:3 0:5 
+- 307 1 34:3 0:5 
+- 308 1 34:3 0:5 
+- 309 1 34:3 0:5 
+- 261 1 51:1 48:3 
+- 262 1 
+- 267 1 34:4 16:5 20:2 
+- 373:8258 2 
+- 373:8229 1 
+- 373:8257 1 
+</blockquote></blockquote>slayer: 
+<blockquote>delay: 259200 
+items: 
+<blockquote>- 306 1 34:4 0:3 1:5 
+- 307 1 34:4 0:3 1:5 
+- 308 1 34:4 0:3 1:5 
+- 309 1 34:4 0:3 1:5 2:5 
+- 267 1 34:4 19:3 20:3 
+- 261 1  50:1 49:3 
+- 262 128 
+- 373:8229 1 
+- 373:8257 1 
+- 373:8195 1 
+</blockquote></blockquote>general: 
+<blockquote>delay: 295200 
+items: 
+<blockquote>- 310 1 34:4 1:4 4:4 0:2 
+- 311 1 34:4 1:4 4:4 0:2 
+- 312 1 34:4 1:4 4:4 0:2 
+- 313 1 34:4 1:4 4:4 0:2 
+- 276 1 16:3 20:1 
+- 259 1 34:5 
+- 277 1 34:2 32:2 
+- 279 1 34:2 32:2 
+- 278 1 34:2 32:2 
+- 293 1 34:2 32:2 
+- 373:16458 2 
+- 373:8225 2 
+- 373:8226 1 
+- 373:8195 1 
+</blockquote></blockquote>legend: 
+<blockquote>delay: 295200 
+items: 
+<blockquote>- 310 1 34:1 4:3 0:3 
+- 311 1 34:1 4:3 0:3 
+- 312 1 34:1 4:3 0:3 
+- 313 1 34:1 4:3 0:3 2:3 
+- 276 1 16:3 
+- 322:1 2 
+</blockquote></blockquote>veteran:  
+<blockquote>delay: 460800 
+items: 
+<blockquote>- 310 1 34:2 1:2 3:2 4:2 5:2 
+- 311 1 34:2 1:2 3:2 4:2 5:2 
+- 312 1 34:2 1:2 3:2 4:2 5:2 
+- 313 1 34:2 1:2 3:2 4:2 5:2 
+- 276 1 16:2 17:2 18:2 19:2 21:2 
+- 322:1 5 
+</blockquote></blockquote>titan: 
+<blockquote>delay: 504000 
+items: 
+<blockquote>- 56 16 
+- 14 16 
+- 15 16 
+- 129 32 
+- 16 32 
+- 21 32 
+- 73 32 
+- 153 32 
+- 278 2 34:5 32:4 
+- 278 1 34:5 32:2 33:1 
+- 278 1 34:5 35:4 
+</blockquote></blockquote>emperor: 
+<blockquote>delay: 720000 
+items: 
+<blockquote>- 276 1 34:4 21:4 20:2 
+- 322:1 12 
+- 383:120 16 
+</blockquote></blockquote>elite: 
+<blockquote>delay: 810000 
+items: 
+<blockquote>- 310 1 0:5 34:3 
+- 311 1 0:5 34:3 
+- 312 1 0:5 34:3 
+- 313 1 0:5 34:3 2:4 
+- 276 1 34:3 16:5 20:3 
+- 322:1 16 
+</blockquote></blockquote>epvp:  
+delay: 900000 
+<blockquote>items: 
+<blockquote>- 310 1 0:4 34:2 
+- 311 1 0:4 34:2 
+- 312 1 0:4 34:2 
+- 313 1 0:4 34:2 
+- 276 1 16:4 20:1 
+- 261 1 48:4 49:2 50:2 51:1 
+- 262 1 
+- 322:1 24 
+- 368 8 
+- 373:8225 2 
+- 373:8229 2 
+</blockquote></blockquote>ehg: 
+<blockquote>delay: 1008000 
+items: 
+<blockquote>- 310 4 0:4 34:2 
+- 311 4 0:4 34:2 
+- 312 4 0:4 34:2 
+- 313 4 0:4 34:2 
+- 276 4 16:4 20:1 
+- 322:1 64 
+- 261 4 48:4 49:2 51:1 
+- 262 4 
+- 368 64 
+</blockquote></blockquote>guard:  
+<blockquote>delay: 1152000 
+items: 
+<blockquote>- 310 3 34:3 0:4 
+- 311 3 34:3 0:4 
+- 312 3 34:3 0:4 
+- 313 3 34:3 0:4 
+- 276 2 34:3 16:5 20:2 
+- 279 2 34:3 16:5 20:2 
+- 384 256 
+- 322:0 32 
+- 322:1 48 
+</blockquote></blockquote>gangel: 
+<blockquote>delay: 1152000 
+items: 
+<blockquote>- 310 2 34:4 0:4 
+- 311 2 34:4 0:4 
+- 312 2 34:4 0:4 
+- 313 2 34:4 0:4 
+- 276 2 34:3 16:5 20:2 
+- 279 2 34:3 16:5 20:2 
+- 322:0 32 
+- 322:1 48 
+- 373:8229 4 
+- 368 32 
+</blockquote></blockquote>ega: 
+<blockquote>delay: 1368000 
+items: 
+<blockquote>- 310 2 34:4 0:4 5:3 
+- 311 2 34:4 0:4 
+- 312 2 34:4 0:4 
+- 313 2 34:4 0:4 
+- 261 2 34:3 51:2 48:5 50:2 
+- 262 2 
+- 322:0 96 
+- 322:1 96 
+- 368 64 
+- 384 384 
+- 279 2 34:4 16:5 20:3 
+- 276 2 34:4 16:5 20:3 
+</blockquote></blockquote>god:  
+<blockquote>delay: 1512000 
+items: 
+<blockquote>- 310 4 0:4 34:4 5:4 
+- 311 4 0:4 34:4 
+- 312 4 0:4 34:4 
+- 313 4 0:4 34:4 
+- 276 2 34:4 16:6 20:3 
+- 279 2 34:4 16:6 20:3 
+- 278 3 34:6 32:6 
+- 277 2 34:6 32:6 
+- 346 2 34:8 
+- 261 2 34:4 51:2 50:2 48:5 
+- 384 128 
+- 368 32 
+- 322:0 192 
+- 322:1 192 
+</blockquote></blockquote></blockquote># Essentials Sign Control # See <a href="http://wiki.ess3.net/wfiki/Sign_Tutorial" rel="nofollow">http://wiki.ess3.net/wfiki/Sign_Tutorial</a> for instructions on how to use these. # To enable signs, remove # symbol. To disable all signs, comment/remove each sign. # Essentials Colored sign support will be enabled when any sign types are enabled. # Color is not an actual sign, it&#x27;s for enabling using color codes on signs, when the correct permissions are given. </p><p>enabledSigns: <ol><li> color </li></ol><blockquote>- balance 
+- buy 
+- sell 
+</blockquote><ol><li> trade </li><li> free </li></ol><blockquote>- disposal 
+- warp 
+</blockquote><ol><li> kit </li><li> mail </li></ol><blockquote>- enchant 
+</blockquote><ol><li> gamemode </li><li> heal </li><li> info </li><li> spawnmob </li></ol><blockquote>- repair 
+</blockquote><ol><li> time </li><li> weather </li></ol>   # How many times per second can Essentials signs be interacted with per player. # Values should be between 1-20, 20 being virtually no lag protection. # Lower numbers will reduce the possibility of lag, but may annoy players. sign-use-per-second: 4 </p><p># Backup runs a batch/bash command while saving is disabled. backup: <ol><li>Interval in minutes. </li></ol><blockquote>interval: 30 
+</blockquote><ol><li>Unless you add a valid backup command or script here, this feature will be useless. </li><li>Use &#x27;save-all&#x27; to simply force regular world saving without backup. </li><li>ommand: &#x27;rdiff-backup World1 backups/World1&#x27; </li></ol></p><p># Set this true to enable permission per warp. per-warp-permission: false </p><p># Sort output of /list command by groups. # You can hide and merge the groups displayed in /list by defining the desired behaviour here. # Detailed instructions and examples can be found on the wiki: <a href="http://wiki.ess3.net/wiki/List" rel="nofollow">http://wiki.ess3.net/wiki/List</a> list: <ol><li>To merge groups, list the groups you wish to merge </li><li>taff: owner admin moderator </li></ol><blockquote>Admins: owner admin 
+</blockquote><ol><li>To limit groups, set a max user limit </li><li>uilder: 20 </li><li>To hide groups, set the group as hidden </li><li>efault: hidden </li><li>Uncomment the line below to simply list all players with no grouping </li><li>layers: &#x27;<strong>&#x27; </li></ol>   # More output to the console. debug: false </strong></p><p># Set the locale for all messages. # If you don&#x27;t set this, the default locale of the server will be used. # For example, to set language to English, set locale to en, to use the file &quot;messages_en.properties&quot;. # Don&#x27;t forget to remove the # in front of the line. # For more information, visit <a href="http://wiki.ess3.net/wiki/Locale" rel="nofollow">http://wiki.ess3.net/wiki/Locale</a> #locale: en </p><p># Turn off god mode when people exit. remove-god-on-disconnect: false </p><p># Auto-AFK # After this timeout in seconds, the user will be set as afk. # This feature requires the player to have essentials.afk.auto node. # Set to -1 for no timeout. auto-afk: 300 </p><p># Auto-AFK Kick # After this timeout in seconds, the user will be kicked from the server. # essentials.afk.kickexempt node overrides this feature. # Set to -1 for no timeout. auto-afk-kick: 450 </p><p># Set this to true, if you want to freeze the player, if he is afk. # Other players or monsters can&#x27;t push him out of afk mode then. # This will also enable temporary god mode for the afk player. # The player has to use the command /afk to leave the afk mode. freeze-afk-players: false </p><p># When the player is afk, should he be able to pickup items? # Enable this, when you don&#x27;t want people idling in mob traps. disable-item-pickup-while-afk: false </p><p># This setting controls if a player is marked as active on interaction. # When this setting is false, you will need to manually un-AFK using the /afk command. cancel-afk-on-interact: true </p><p># Should we automatically remove afk status when the player moves? # Player will be removed from AFK on chat/command regardless of this setting. # Disable this to reduce server lag. cancel-afk-on-move: true </p><p># You can disable the death messages of Minecraft here. death-messages: true </p><p># Add worlds to this list, if you want to automatically disable god mode there. no-god-in-worlds: #  - world_nether </p><p># Set to true to enable per-world permissions for teleporting between worlds with essentials commands. # This applies to /world, /back, /tp[a|o][here|all], but not warps. # Give someone permission to teleport to a world with essentials.worlds.&lt;worldname&gt; # This does not affect the /home command, there is a separate toggle below for this. world-teleport-permissions: false </p><p># The number of items given if the quantity parameter is left out in /item or /give. # If this number is below 1, the maximum stack size size is given. If over-sized stacks. # are not enabled, any number higher than the maximum stack size results in more than one stack. default-stack-size: -1 </p><p># Over-sized stacks are stacks that ignore the normal max stack size. # They can be obtained using /give and /item, if the player has essentials.oversizedstacks permission. # How many items should be in an over-sized stack? oversized-stacksize: 64 </p><p># Allow repair of enchanted weapons and armor. # If you set this to false, you can still allow it for certain players using the permission. # essentials.repair.enchanted repair-enchanted: true </p><p># Allow &#x27;unsafe&#x27; enchantments in kits and item spawning. # Warning: Mixing and overleveling some enchantments can cause issues with clients, servers and plugins. unsafe-enchantments: true </p><p>#Do you want essentials to keep track of previous location for /back in the teleport listener? #If you set this to true any plugin that uses teleport will have the previous location registered. register-back-in-listener: false </p><p>#Delay to wait before people can cause attack damage after logging in.  login-attack-delay: 5 </p><p>#Set the max fly speed, values range from 0.1 to 1.0 max-fly-speed: 0.8 </p><p>#Set the max walk speed, values range from 0.1 to 1.0 max-walk-speed: 0.8 </p><p>#Set the maximum amount of mail that can be sent within a minute. mails-per-minute: 1000 </p><p># Set the maximum time /tempban can be used for in seconds. # Set to -1 to disable, and essentials.tempban.unlimited can be used to override. max-tempban-time: -1 </p><p>############################################################ # +------------------------------------------------------+ # # |                   EssentialsHome<a href="/p/js-test-driver/w/edit/EssentialsHome">?</a>                     | # # +------------------------------------------------------+ # ############################################################ </p><p># Allows people to set their bed at daytime. update-bed-at-daytime: true </p><p># Set to true to enable per-world permissions for using homes to teleport between worlds. # This applies to the /home only. # Give someone permission to teleport to a world with essentials.worlds.&lt;worldname&gt; world-home-permissions: false </p><p># Allow players to have multiple homes. # Players need essentials.sethome.multiple before they can have more than 1 home, defaults to &#x27;default&#x27; below. # Define different amounts of multiple homes for different permissions, e.g. essentials.sethome.multiple.vip # People with essentials.sethome.multiple.unlimited are not limited by these numbers. # For more information, visit <a href="http://wiki.ess3.net/wiki/Multihome" rel="nofollow">http://wiki.ess3.net/wiki/Multihome</a> sethome-multiple:   <blockquote>default: 3 
+</blockquote><ol><li>essentials.sethome.multiple.vip </li></ol><blockquote>vip: 45 
+</blockquote><ol><li>essentials.sethome.multiple.staff </li></ol><blockquote>staff: 10000 
+</blockquote></p><p># Set timeout in seconds for players to accept tpa before request is cancelled. # Set to 0 for no timeout. tpa-accept-cancellation: 120 </p><p>############################################################ # +------------------------------------------------------+ # # |                   EssentialsEco<a href="/p/js-test-driver/w/edit/EssentialsEco">?</a>                      | # # +------------------------------------------------------+ # ############################################################ </p><p># For more information, visit <a href="http://wiki.ess3.net/wiki/Essentials_Economy" rel="nofollow">http://wiki.ess3.net/wiki/Essentials_Economy</a> </p><p># Defines the balance with which new players begin.  Defaults to 0. starting-balance: 450 </p><p># worth-# defines the value of an item when it is sold to the server via /sell. # These are now defined in worth.yml </p><p># Defines the cost to use the given commands PER USE. # Some commands like /repair have sub-costs, check the wiki for more information. command-costs: <ol><li>/example costs $1000 PER USE </li><li>xample: 1000 </li><li>/kit tools costs $1500 PER USE </li><li>it-tools: 1500 </li></ol></p><p># Set this to a currency symbol you want to use. currency-symbol: &#x27;$&#x27; </p><p># Set the maximum amount of money a player can have. # The amount is always limited to 10 trillion because of the limitations of a java double. max-money: 10000000000000 </p><p># Set the minimum amount of money a player can have (must be above the negative of max-money). # Setting this to 0, will disable overdrafts/loans completely.  Users need &#x27;essentials.eco.loan&#x27; perm to go below 0. min-money: -10000 </p><p># Enable this to log all interactions with trade/buy/sell signs and sell command. economy-log-enabled: false </p><p>############################################################ # +------------------------------------------------------+ # # |                   EssentialsHelp<a href="/p/js-test-driver/w/edit/EssentialsHelp">?</a>                     | # # +------------------------------------------------------+ # ############################################################ </p><p># Show other plugins commands in help. non-ess-in-help: true </p><p># Hide plugins which do not give a permission. # You can override a true value here for a single plugin by adding a permission to a user/group. # The individual permission is: essentials.help.&lt;plugin&gt;, anyone with essentials.<strong> or &#x27;</strong>&#x27; will see all help regardless. # You can use negative permissions to remove access to just a single plugins help if the following is enabled. hide-permissionless-help: true </p><p>############################################################ # +------------------------------------------------------+ # # |                   EssentialsChat<a href="/p/js-test-driver/w/edit/EssentialsChat">?</a>                     | # # +------------------------------------------------------+ # ############################################################ </p><p>chat: </p><ol><li>If EssentialsChat<a href="/p/js-test-driver/w/edit/EssentialsChat">?</a> is installed, this will define how far a player&#x27;s voice travels, in blocks.  Set to 0 to make all chat global. </li><li>Note that users with the &quot;essentials.chat.spy&quot; permission will hear everything, regardless of this setting. </li><li>Users with essentials.chat.shout can override this by prefixing text with an exclamation mark (!) </li><li>Users with essentials.chat.question can override this by prefixing text with a question mark (?) </li><li>You can add command costs for shout/question by adding chat-shout and chat-question to the command costs section.&quot; </li></ol><blockquote>radius: 0 
+</blockquote><ol><li>Chat formatting can be done in two ways, you can either define a standard format for all chat. </li><li>Or you can give a group specific chat format, to give some extra variation. </li><li>If set to the default chat format which &quot;should&quot; be compatible with ichat. </li><li>For more information of chat formatting, check out the wiki: <a href="http://wiki.ess3.net/wiki/Chat_Formatting" rel="nofollow">http://wiki.ess3.net/wiki/Chat_Formatting</a>   </li></ol><blockquote>format: &#x27;&lt;{DISPLAYNAME}&gt; {MESSAGE}&#x27; 
+</blockquote><ol><li>ormat: &#x27;&amp;7[{GROUP}]&amp;r {DISPLAYNAME}&amp;7:&amp;r {MESSAGE}&#x27; </li></ol><blockquote>group-formats: 
+</blockquote><ol><li> Default: &#x27;{WORLDNAME} {DISPLAYNAME}&amp;7:&amp;r {MESSAGE}&#x27; </li><li> Admins: &#x27;{WORLDNAME} &amp;c[{GROUP}]&amp;r {DISPLAYNAME}&amp;7:&amp;c {MESSAGE}&#x27; </li></ol><ol><li>If you are using group formats make sure to remove the &#x27;#&#x27; to allow the setting to be read. </li></ol><p>############################################################ # +------------------------------------------------------+ # # |                 EssentialsProtect<a href="/p/js-test-driver/w/edit/EssentialsProtect">?</a>                    | # # +------------------------------------------------------+ # ############################################################ </p><p>protect:    <ol><li>General physics/behavior modifications. </li></ol><blockquote>prevent: 
+<blockquote>lava-flow: false 
+water-flow: false 
+water-bucket-flow: false 
+fire-spread: true 
+lava-fire-spread: true 
+flint-fire: false 
+lightning-fire-spread: true 
+portal-creation: false 
+tnt-explosion: false 
+tnt-playerdamage: false 
+tnt-minecart-explosion: false 
+tnt-minecart-playerdamage: false 
+fireball-explosion: false 
+fireball-fire: false 
+fireball-playerdamage: false 
+witherskull-explosion: false 
+witherskull-playerdamage: false 
+wither-spawnexplosion: false 
+wither-blockreplace: false 
+creeper-explosion: false 
+creeper-playerdamage: false 
+creeper-blockdamage: false 
+enderdragon-blockdamage: true 
+enderman-pickup: false 
+villager-death: false 
+</blockquote><ol><li>Monsters won&#x27;t follow players. </li><li>permission essentials.protect.entitytarget.bypass disables this. </li></ol><blockquote>entitytarget: false 
+</blockquote><ol><li>Prevent the spawning of creatures. </li></ol><blockquote>spawn: 
+<blockquote>creeper: false 
+skeleton: false 
+spider: false 
+giant: false 
+zombie: false 
+slime: false 
+ghast: false 
+pig_zombie: false 
+enderman: false 
+cave_spider: false 
+silverfish: false 
+blaze: false 
+magma_cube: false 
+ender_dragon: false 
+pig: false 
+sheep: false 
+cow: false 
+chicken: false 
+squid: false 
+wolf: false 
+mushroom_cow: false 
+snowman: false 
+ocelot: false 
+iron_golem: false 
+villager: false 
+wither: false 
+bat: false 
+witch: false 
+</blockquote></blockquote></blockquote>       <ol><li>Maximum height the creeper should explode. -1 allows them to explode everywhere. </li><li>Set prevent.creeper-explosion to true, if you want to disable creeper explosions. </li></ol><blockquote>creeper: 
+<blockquote>max-height: -1 
+</blockquote></blockquote></p><ol><li>Disable various default physics and behaviors. </li></ol><blockquote>disable: 
+<ol><li>Should fall damage be disabled? </li></ol><blockquote>fall: false 
+</blockquote></blockquote><ol><li>Users with the essentials.protect.pvp permission will still be able to attack each other if this is set to true. </li><li>They will be unable to attack users without that same permission node. </li></ol><blockquote>pvp: false 
+</blockquote><ol><li>Should drowning damage be disabled? </li><li>(Split into two behaviors; generally, you want both set to the same value.) </li></ol><blockquote>drown: false 
+suffocate: false 
+</blockquote><ol><li>Should damage via lava be disabled?  Items that fall into lava will still burn to a crisp. ;) </li></ol><blockquote>lavadmg: false 
+</blockquote><ol><li>Should arrow damage be disabled? </li></ol><blockquote>projectiles: false 
+</blockquote><ol><li>This will disable damage from touching cacti. </li></ol><blockquote>contactdmg: false 
+</blockquote><ol><li>Burn, baby, burn!  Should fire damage be disabled? </li></ol><blockquote>firedmg: false 
+</blockquote><ol><li>Should the damage after hit by a lightning be disabled? </li></ol><blockquote>lightning: false 
+</blockquote><p>     <ol><li>Should Wither damage be disabled? </li></ol><blockquote>wither: false 
+</blockquote></p><ol><li>Disable weather options? </li></ol><blockquote>weather: 
+<blockquote>storm: false 
+thunder: false 
+lightning: false      
+</blockquote></blockquote><p>############################################################ # +------------------------------------------------------+ # # |                EssentialsAntiBuild<a href="/p/js-test-driver/w/edit/EssentialsAntiBuild">?</a>                   | # # +------------------------------------------------------+ # ############################################################ </p><ol><li>Disable various default physics and behaviors </li><li>For more information, visit <a href="http://wiki.ess3.net/wiki/AntiBuild" rel="nofollow">http://wiki.ess3.net/wiki/AntiBuild</a> </li></ol><ol><li>Should people with build: false in permissions be allowed to build? </li><li>Set true to disable building for those people. </li><li>Setting to false means EssentialsAntiBuild<a href="/p/js-test-driver/w/edit/EssentialsAntiBuild">?</a> will never prevent you from building. </li></ol><blockquote>build: true 
+</blockquote><ol><li>Should people with build: false in permissions be allowed to use items? </li><li>Set true to disable using for those people. </li><li>Setting to false means EssentialsAntiBuild<a href="/p/js-test-driver/w/edit/EssentialsAntiBuild">?</a> will never prevent you from using. </li></ol><blockquote>use: true 
+</blockquote><ol><li>Should we tell people they are not allowed to build? </li></ol><blockquote>warn-on-build-disallow: true 
+</blockquote><ol><li>For which block types would you like to be alerted? </li><li>You can find a list of IDs in plugins/Essentials/items.csv after loading Essentials for the first time. </li><li>10 = lava :: 11 = still lava :: 46 = TNT :: 327 = lava bucket </li></ol><blockquote>alert: 
+<blockquote>on-placement: 10,11,46,327 
+on-use: 327 
+on-break: 
+</blockquote></blockquote><blockquote>blacklist: 
+</blockquote><ol><li>Which blocks should people be prevented from placing? </li></ol><blockquote>placement: 10,11,46,327 
+</blockquote><ol><li>Which items should people be prevented from using? </li></ol><blockquote>usage: 327 
+</blockquote><ol><li>Which blocks should people be prevented from breaking? </li></ol><blockquote>break: 
+</blockquote><ol><li>Which blocks should not be pushed by pistons? </li></ol><blockquote>piston: 
+</blockquote><p>           <ol><li>Which blocks should not be dispensed by dispensers </li></ol><blockquote>dispenser: 
+</blockquote></p><p>############################################################ # +------------------------------------------------------+ # # |            Essentials Spawn / New Players            | # # +------------------------------------------------------+ # ############################################################ </p><p>newbies: <ol><li>Should we announce to the server when someone logs in for the first time? </li><li>If so, use this format, replacing {DISPLAYNAME} with the player name. </li><li>If not, set to &#x27;&#x27; </li><li>nnounce-format: &#x27;&#x27; </li></ol><blockquote>announce-format: &#x27;&amp;dWelcome {DISPLAYNAME}&amp;d to the server!&#x27; 
+</blockquote></p><ol><li>When we spawn for the first time, which spawnpoint do we use? </li><li>Set to &quot;none&quot; if you want to use the spawn point of the world. </li></ol><blockquote>spawnpoint: newbies 
+</blockquote><ol><li>Do we want to give users anything on first join? Set to &#x27;&#x27; to disable </li><li>This kit will be given regardless of cost, and permissions. </li><li>it: &#x27;&#x27; </li></ol><blockquote>kit: start 
+</blockquote><p># Set this to lowest, if you want Multiverse to handle the respawning. # Set this to high, if you want EssentialsSpawn<a href="/p/js-test-driver/w/edit/EssentialsSpawn">?</a> to handle the respawning. # Set this to highest, if you want to force EssentialsSpawn<a href="/p/js-test-driver/w/edit/EssentialsSpawn">?</a> to handle the respawning. respawn-listener-priority: high </p><p># When users die, should they respawn at their first home or bed, instead of the spawnpoint? respawn-at-home: false </p><p># End of File &lt;-- No seriously, you&#x27;re done with configuration. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">lennholm...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Tue Mar  4 06:25:56 2014">Mar 4, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>I have trouble adding external scripts in the &quot;load&quot; configuration. It works when I&#x27;m ONLY trying to load the external script but as soon as I&#x27;m trying to load both the external script and local scripts the driver seems to think the external script is relative to the working folder, even though I&#x27;ve specified  the URL with http: Anyone else has this problem? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111140558441891965124/">putuindr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Mar 21 00:10:23 2015">Mar 21, 2015</span>
+ <div>
+<div class="commentcontent">
+<p>could you please tell me more detal? because I want to deepen </p><p><a href="http://wdfshare.blogspot.com" rel="nofollow">http://wdfshare.blogspot.com</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muaraang...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri May  1 00:04:48 2015">May 1, 2015</span>
+ <div>
+<div class="commentcontent">
+<p><a href="http://anekajaringmurah.blogspot.com/" rel="nofollow">http://anekajaringmurah.blogspot.com/</a> <a href="http://pusatjaringmurah.blogspot.com/" rel="nofollow">http://pusatjaringmurah.blogspot.com/</a> <a href="http://anekajaringpengaman.blogspot.com/" rel="nofollow">http://anekajaringpengaman.blogspot.com/</a> <a href="http://agenjaringpengaman.blogspot.com/" rel="nofollow">http://agenjaringpengaman.blogspot.com/</a> <a href="http://jaringpengamanfutsal.blogspot.com/" rel="nofollow">http://jaringpengamanfutsal.blogspot.com/</a> <a href="http://jaring-pengamanmurah.blogspot.com/" rel="nofollow">http://jaring-pengamanmurah.blogspot.com/</a> <a href="http://jaringcenter.blogspot.com/" rel="nofollow">http://jaringcenter.blogspot.com/</a> <a href="http://agenjaringjakata.blogspot.com/" rel="nofollow">http://agenjaringjakata.blogspot.com/</a> <a href="http://jualjaringpengamanmurah.blogspot.com/" rel="nofollow">http://jualjaringpengamanmurah.blogspot.com/</a> <a href="http://jaringsafetyjakarta.blogspot.com/" rel="nofollow">http://jaringsafetyjakarta.blogspot.com/</a> <a href="http://jaringpengaman-murah.blogspot.com/" rel="nofollow">http://jaringpengaman-murah.blogspot.com/</a> <a href="http://jaringmurah.blogspot.com/" rel="nofollow">http://jaringmurah.blogspot.com/</a> <a href="http://jaring-murah.blogspot.com/" rel="nofollow">http://jaring-murah.blogspot.com/</a> <a href="http://jaringpengamanmurah.blogspot.com/" rel="nofollow">http://jaringpengamanmurah.blogspot.com/</a> <a href="http://jaringbangunan.blogspot.com/" rel="nofollow">http://jaringbangunan.blogspot.com/</a> <a href="http://agenjaringsafety.blogspot.com/" rel="nofollow">http://agenjaringsafety.blogspot.com/</a> <a href="http://sentral-jaring.blogspot.com/" rel="nofollow">http://sentral-jaring.blogspot.com/</a> <a href="http://sentraljaring.blogspot.com/" rel="nofollow">http://sentraljaring.blogspot.com/</a> <a href="http://tokojaringpengaman.blogspot.com/" rel="nofollow">http://tokojaringpengaman.blogspot.com/</a> <a href="http://pusatjaringjakarta.blogspot.com/" rel="nofollow">http://pusatjaringjakarta.blogspot.com/</a> <a href="http://tokojaringpengamanmurah.blogspot.com/" rel="nofollow">http://tokojaringpengamanmurah.blogspot.com/</a> <a href="http://jualjaringsafetymurah.blogspot.com/" rel="nofollow">http://jualjaringsafetymurah.blogspot.com/</a> <a href="https://pancasamudera.wordpress.com/" rel="nofollow">https://pancasamudera.wordpress.com/</a> <a href="https://pasangjaringfutsal.wordpress.com/" rel="nofollow">https://pasangjaringfutsal.wordpress.com/</a> <a href="https://jualtambangmurah.wordpress.com/" rel="nofollow">https://jualtambangmurah.wordpress.com/</a> <a href="https://tokojaring.wordpress.com/" rel="nofollow">https://tokojaring.wordpress.com/</a> <a href="https://jualjaringfutsal.wordpress.com/" rel="nofollow">https://jualjaringfutsal.wordpress.com/</a> <a href="https://jaringfutsal.wordpress.com/" rel="nofollow">https://jaringfutsal.wordpress.com/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FConfigurationFile&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FConfigurationFile"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="ConfigurationFile" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

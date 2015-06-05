@@ -1,0 +1,1200 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/js-test-driver/wiki/AsyncTestCase" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"token": null, "projectHomeUrl": "/p/js-test-driver", "profileUrl": null, "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/8599073060794244502", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "domainName": null, "relativeBaseUrl": "", "loggedInUserEmail": null, "projectName": "js-test-driver"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>AsyncTestCase - 
+ js-test-driver -
+ 
+ Demonstrates usage of the asynchronous testing API. - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/gitchanges/basic?path=/AsyncTestCase.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FAsyncTestCase&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FAsyncTestCase" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="https://ssl.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=js-test-driver">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">AsyncTestCase</span>
+ &nbsp;
+ <div> 
+ 
+ <i>Demonstrates usage of the asynchronous testing API.</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jun  6 03:07:41 2012">
+ Jun 6, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118380232301266653208/">corbinrs...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <p>A traditional JsTestDriver test case looks like this: </p><pre class="prettyprint">var MyTest = TestCase(&#x27;MyTest&#x27;);
+
+MyTest.prototype.testSomething = function() {
+  // make some assertions, etc.
+};</pre><p>We&#x27;ve extended the test cases to allow their test methods to accept a parameter. The parameter is a queue that accepts inline functions that represent sequential steps of the test. The test runner executes these steps in sequence, ending the test if at any point an assertion fails. </p><p>Here&#x27;s an example that uses the queue but does not use any asynchronous operations. </p><pre class="prettyprint">var QueueTest = AsyncTestCase(&#x27;QueueTest&#x27;);
+
+QueueTest.prototype.testSomething = function(queue) {
+  var state = 0;
+
+  queue.call(&#x27;Step 1: assert the starting condition holds&#x27;, function() {
+    assertEquals(0, state);
+  });
+
+  queue.call(&#x27;Step 2: increment our variable&#x27;, function() {
+    ++state;
+  });
+
+  queue.call(&#x27;Step 3: assert the variable\&#x27;s value changed&#x27;, function() {
+    assertEquals(1, state);
+  });
+};</pre><p>Note we are using <a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a>() now instead of <a href="/p/js-test-driver/wiki/TestCase">TestCase</a>().  Also, the queue has a method call() that accepts an optional string to identify the step of the test, and an operation.  You could also omit the strings and just call <tt>queue.call(function() {})</tt>.  The functions passed to the queue&#x27;s <tt>call()</tt> method usually have more than one line, but the above example is minimal. </p><p>Finally, in order to support testing asynchronous operations, as the test runner executes each step in the queue it passes a parameter to that step. The parameter is an empty pool of callback functions. You add your callback functions to the pool so the test runner can track that they are outstanding. The pool wraps your callback functions in a way that preserves their behavior but that notifies the test runner when an asynchronous system calls them. You call <tt>var myTweakedCallback = callbacks.add(myOriginalCallback)</tt> which returns the tweaked version. The test runner will not execute any subsequent step in the queue until all outstanding callbacks of the current step are complete. If the callbacks are not a called for an egregious amount of time, currently set to 30 seconds, the test fails. </p><p>Here&#x27;s an example: </p><pre class="prettyprint">var AsynchronousTest = AsyncTestCase(&#x27;AsynchronousTest&#x27;);
+
+AsynchronousTest.prototype.testSomethingComplicated = function(queue) {
+  var state = 0;
+
+  queue.call(&#x27;Step 1: schedule the window to increment our variable 5 seconds from now.&#x27;, function(callbacks) {
+    var myCallback = callbacks.add(function() {
+      ++state;
+    });
+    window.setTimeout(myCallback, 5000);
+  });
+
+  queue.call(&#x27;Step 2: then assert our state variable changed&#x27;, function() {
+    assertEquals(1, state);
+  });
+};</pre><p>Here&#x27;s a more realistic example that communicates with a hypothetical HTTP server: </p><pre class="prettyprint">var XhrTest = AsyncTestCase(&#x27;XhrTest&#x27;);
+
+XhrTest.prototype.testRequest = function(queue) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(&#x27;GET&#x27;, &#x27;/some/path&#x27;);
+
+  var responseBody;
+  
+  queue.call(&#x27;Step 1: send a request to the server and save the response body&#x27;, function(callbacks) {
+    var onStatusReceived = callbacks.add(function(status) {
+      assertEquals(200, status);
+    });
+    
+    var onBodyReceived = callbacks.add(function(body) {
+      responseBody = body;
+    });
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 2) { // headers and status received
+        onStatusReceived(xhr.status);
+      } else if (xhr.readyState == 4) { // full body received
+        onBodyReceived(xhr.responseText);
+      }
+    };
+
+    xhr.send(null);
+  });
+
+  queue.call(&#x27;Step 2: assert the response body matches what we expect&#x27;, function() {
+    assertEquals(&#x27;hello&#x27;, responseBody);
+  });
+};</pre><h2><a name="Advanced_Features"></a>Advanced CallbackPool Features<a href="#Advanced_Features" class="section_anchor"></a></h2><h3><a name="Noop_Callbacks"></a>Noop Callbacks<a href="#Noop_Callbacks" class="section_anchor"></a></h3><p>Sometimes, you may want to do your assertions in the next test step, rather than within the callback you pass to the asynchronous system. CallbackPool has a method called noop() that returns a noop function that blocks the current step until it is called. </p><p>Example: </p><pre class="prettyprint">var NoopTest = AsyncTestCase(&#x27;NoopTest&#x27;);
+
+NoopTest.prototype.testNoop = function(queue) {
+  var asynchronousSystem = ...;
+  assertFalse(asynchronousSystem.wasTriggered());
+  queue.call(&#x27;Trigger the system&#x27;, function(callbacks) {
+    asynchronousSystem.triggerLater(callbacks.noop());
+  });
+  queue.call(&#x27;Assert about the system&#x27;, function() {
+    assertTrue(asynchronousSystem.wasTriggered());
+  });
+};</pre><h3><a name="Errbacks_(Unexpected_Callbacks)"></a>Errbacks (Unexpected Callbacks)<a href="#Errbacks_(Unexpected_Callbacks)" class="section_anchor"></a></h3><p>Sometimes, you may want to fail the test immediately if your asynchronous system calls one callback function instead of another. For instance, imagine you pass two callback functions to your asynchronous system, one for a successful outcome, and another for an unsuccessful outcome. When one callback is executed, the other will never execute. They are mutually exclusive. </p><p>CallbackPool has a method called addErrback() precisely for this situation. Use addErrback() to return a function() that will fail the test if your asynchronous system calls it. AddErrback() accepts a string to identify which errback the asynchronous system called so you may easily identify it from the test failure message. </p><p>Example: </p><pre class="prettyprint">var ErrbackTest = AsyncTestCase(&#x27;ErrbackTest&#x27;);
+
+ErrbackTest.prototype.testErrback = function(queue) {
+  var asynchronousSystem = ...;
+  assertFalse(asynchronousSystem.wasTriggered());
+  queue.call(&#x27;Trigger the system&#x27;, function(callbacks) {
+    asynchronousSystem.triggerLater(
+        callbacks.noop(),
+        callbacks.addErrback(&#x27;Failed to trigger&#x27;));
+  });
+  queue.call(&#x27;Assert about the system&#x27;, function() {
+    assertTrue(asynchronousSystem.wasTriggered());
+  });
+};</pre><h3><a name="Expect_Multiple_Invocations"></a>Expect Multiple Invocations<a href="#Expect_Multiple_Invocations" class="section_anchor"></a></h3><p>Sometimes, your asynchronous system needs to call a single callback multiple times within one step of your test. Both add() and noop() accept an optional count argument that specifies how many times you expect your asynchronous system to call its callback. </p><p>Example: </p><pre class="prettyprint">var MultipleTest = AsyncTestCase(&#x27;MultipleTest&#x27;);
+
+MultipleTest.prototype.testMultipleInvocations = function(queue) {
+  queue.call(&#x27;Expect three invocations&#x27;, function(callbacks) {
+    var count = 0;
+    var intervalHandle;
+    var callback = callbacks.add(function() {
+      ++count;
+      if (count &gt;= 3) {
+        window.clearInterval(intervalHandle);
+      }
+    }, 3); // expect callback to be called no less than 3 times
+    intervalHandle = window.setInterval(callback, 1000);
+  });
+};</pre>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/105926108535991484511/">olegelif...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 28 09:00:12 2010">Sep 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Is where any downloadable compiled binary which supports asynchronous testing? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by  project member 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/109155946678522854539/">robertsd...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Oct  4 16:52:43 2010">Oct 4, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Version 1.2.2 has the asynchronous test API, but it was released back in May 2010. We&#x27;ve fixed several critical bugs since then. I&#x27;ll let Cory know we should release an updated version. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/105926108535991484511/">olegelif...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Oct 15 01:11:09 2010">Oct 15, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>What version of testing API are in IDEA Plugin? Does version 1.2.2a of plugin contain asyncronous api? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101687545303295184240/">crys...@bleext.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Nov 19 02:39:17 2010">Nov 19, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Hi there! I really like this project, it looks really awesome! </p><p>I&#x27;m having some issues with the &quot;<a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a>&quot;, when I try to run one of the above examples i get an error telling me that the &quot;defer&quot; method is not a function! I&#x27;ve inspected the &quot;queue&quot; object and is true, there&#x27;s not a &quot;defer&quot; method! I&#x27;m using the JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>-1.2.2.jar </p><p>Any suggestions?  </p><p>Best regards </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/eric.eh9@gmail.com/">eric.eh9@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Dec  7 17:40:51 2010">Dec 7, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>As of this writing, the current released version on the downloads page is 1.2.2. The &quot;defer&quot; method is defined in DeferredQueue<a href="/p/js-test-driver/w/edit/DeferredQueue">?</a>.js, created 2010 Jun 17, which is after the release date of 1.2.2, 2010 Jun 05 (according to the download page). In other words, this documentation is for an unreleased version, available only if you&#x27;re building from svn trunk. </p><p>From what I can tell, the actual interface in 1.2.2 is to pass a &#x27;herd&#x27; object (the old name for pool) instead of a queue, as shown above. This should suffice for a single asynchronous call. It&#x27;ll mean rewriting all your async tests when the new version comes out. As for me, I think that&#x27;s less work than dealing with another build environment. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/eric.eh9@gmail.com/">eric.eh9@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Dec 13 05:11:30 2010">Dec 13, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Another piece of the 1.2.2 documentation should be that you can have exactly one <a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a> object, at least insofar as I&#x27;ve been able to get it to work; all others after the first fail. The code that fails has been modified in the trunk. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112373056321392200495/">rdio...@google.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 14 16:39:14 2011">Jan 14, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;ve created tag 1.2.3 which includes the 1.2.2 server-side implementation, augmented with the latest <a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a> and ConditionalTestCase<a href="/p/js-test-driver/w/edit/ConditionalTestCase">?</a> functionality from trunk/HEAD. Multiple AsyncTestCases<a href="/p/js-test-driver/w/edit/AsyncTestCases">?</a> should now be supported, and you should receive the DeferredQueue<a href="/p/js-test-driver/w/edit/DeferredQueue">?</a> as the first argument to your test method, rather than the CallbackPool<a href="/p/js-test-driver/w/edit/CallbackPool">?</a>. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/siunmaru/">siunmaru</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jan 17 02:00:11 2011">Jan 17, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>FYI anyone having issues with these examples - <a title="AsyncTestCase not working in 1.2.2, based on example in Wiki" class=closed_ref href="/p/js-test-driver/issues/detail?id=171">&nbsp;Issue 171&nbsp;</a>: <a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a> not working in 1.2.2, based on example in Wiki (<a href="http://code.google.com/p/js-test-driver/issues/detail?id=171" rel="nofollow">http://code.google.com/p/js-test-driver/issues/detail?id=171</a>) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/114568129194435738559/">abre...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 28 02:20:13 2011">Jan 28, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>In the Expect Multiple Invocations section, the text says &quot;Both add() and noop() accept an optional count argument&quot;, even though in the example below count is just a variable within the scope of the callback, not an argument. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102517767186056925243/">lemieuxs...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jan 31 10:13:49 2011">Jan 31, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>We have noticed that to get AysnTestCase<a href="/p/js-test-driver/w/edit/AysnTestCase">?</a> to work with the IntelliJ plugin (1.2.2b) using, presumably, the latest version of JSTestDriver that to get the case to run as expected you have to do the following.  </p><pre class="prettyprint">TestName.prototype.testToRun = function(pool) {
+   expectAsserts(1);
+   var tF = pool.add(function() {
+                      assertTrue(true); //or your more realistic assert
+                  });
+
+   window.setTimeout(tF, 500); //or your async call of some kind
+};</pre><p>Not sure if this is due to the version in the plugin or if the documentation is out of date.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/sachs.paul/">sachs.paul</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jul  8 11:12:15 2011">Jul 8, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to customize the &quot;egregious&quot; timeout period when waiting for callbacks with  configuration change? I was hoping for something more like 10 seconds. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116356999996219397955/">hamme...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Jul 13 22:58:32 2011">Jul 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Is there any plan to update for supporting QUnitAdapter? It would be great. :) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112865345699967920930/">philb...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Sep 23 03:38:56 2011">Sep 23, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m running v1.3.2 of js test driver, and the documentation still doesn&#x27;t correspond to what happens in this version. The object passed to an async test case has add, count, maybeComplete, onError, onHerdComplete<i>, remove and setTimeout</i> methods. Simply using the add method seems to add methods to be tested, but there&#x27;s nothing obvious to actually run these once they&#x27;ve all been added.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102720727384945314712/">machineg...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Dec  3 23:50:23 2011">Dec 3, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Just FYI, when using <a href="/p/js-test-driver/wiki/AsyncTestCase">AsyncTestCase</a> with window.setTimeout, be sure to set a decent (1000 worked for me) timeout length.  If you try to use a timeout of 1 (as I often do), you may see strange behaviour. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115052908021360451116/">kyawt...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jul 12 20:04:07 2012">Jul 12, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Can we change default time out (30s) to shorter interval? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102133560952149476956/">vasek.b...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Sep  5 04:27:02 2012">Sep 5, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Well I was doing some research about this. Because we have realy extensive tests, that takes long time. I&#x27;ve started modifing the jar archive. But the solution is mutch simplier. Just setUp this variable in setUp in every test. And you should be fine. <tt>jstestdriver.plugins.async.CallbackPool.TIMEOUT = 50000</tt> The timeout is is ms. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/siunmaru/">siunmaru</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Nov 19 04:04:27 2012">Nov 19, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>@vasek - perfect! (jstestdriver.plugins.async.CallbackPool<a href="/p/js-test-driver/w/edit/CallbackPool">?</a>.TIMEOUT = 50000) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118194034349154134461/">the961be...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Mar 17 03:43:02 2015">Mar 17, 2015</span>
+ <div>
+<div class="commentcontent">
+<p>It scipt what? Please explain to me, because I want to in depth <a href="http://wdfshare.blogspot.com" rel="nofollow">http://wdfshare.blogspot.com</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muaraang...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri May  1 00:04:02 2015">May 1, 2015</span>
+ <div>
+<div class="commentcontent">
+<p><a href="http://anekajaringmurah.blogspot.com/" rel="nofollow">http://anekajaringmurah.blogspot.com/</a> <a href="http://pusatjaringmurah.blogspot.com/" rel="nofollow">http://pusatjaringmurah.blogspot.com/</a> <a href="http://anekajaringpengaman.blogspot.com/" rel="nofollow">http://anekajaringpengaman.blogspot.com/</a> <a href="http://agenjaringpengaman.blogspot.com/" rel="nofollow">http://agenjaringpengaman.blogspot.com/</a> <a href="http://jaringpengamanfutsal.blogspot.com/" rel="nofollow">http://jaringpengamanfutsal.blogspot.com/</a> <a href="http://jaring-pengamanmurah.blogspot.com/" rel="nofollow">http://jaring-pengamanmurah.blogspot.com/</a> <a href="http://jaringcenter.blogspot.com/" rel="nofollow">http://jaringcenter.blogspot.com/</a> <a href="http://agenjaringjakata.blogspot.com/" rel="nofollow">http://agenjaringjakata.blogspot.com/</a> <a href="http://jualjaringpengamanmurah.blogspot.com/" rel="nofollow">http://jualjaringpengamanmurah.blogspot.com/</a> <a href="http://jaringsafetyjakarta.blogspot.com/" rel="nofollow">http://jaringsafetyjakarta.blogspot.com/</a> <a href="http://jaringpengaman-murah.blogspot.com/" rel="nofollow">http://jaringpengaman-murah.blogspot.com/</a> <a href="http://jaringmurah.blogspot.com/" rel="nofollow">http://jaringmurah.blogspot.com/</a> <a href="http://jaring-murah.blogspot.com/" rel="nofollow">http://jaring-murah.blogspot.com/</a> <a href="http://jaringpengamanmurah.blogspot.com/" rel="nofollow">http://jaringpengamanmurah.blogspot.com/</a> <a href="http://jaringbangunan.blogspot.com/" rel="nofollow">http://jaringbangunan.blogspot.com/</a> <a href="http://agenjaringsafety.blogspot.com/" rel="nofollow">http://agenjaringsafety.blogspot.com/</a> <a href="http://sentral-jaring.blogspot.com/" rel="nofollow">http://sentral-jaring.blogspot.com/</a> <a href="http://sentraljaring.blogspot.com/" rel="nofollow">http://sentraljaring.blogspot.com/</a> <a href="http://tokojaringpengaman.blogspot.com/" rel="nofollow">http://tokojaringpengaman.blogspot.com/</a> <a href="http://pusatjaringjakarta.blogspot.com/" rel="nofollow">http://pusatjaringjakarta.blogspot.com/</a> <a href="http://tokojaringpengamanmurah.blogspot.com/" rel="nofollow">http://tokojaringpengamanmurah.blogspot.com/</a> <a href="http://jualjaringsafetymurah.blogspot.com/" rel="nofollow">http://jualjaringsafetymurah.blogspot.com/</a> <a href="https://pancasamudera.wordpress.com/" rel="nofollow">https://pancasamudera.wordpress.com/</a> <a href="https://pasangjaringfutsal.wordpress.com/" rel="nofollow">https://pasangjaringfutsal.wordpress.com/</a> <a href="https://jualtambangmurah.wordpress.com/" rel="nofollow">https://jualtambangmurah.wordpress.com/</a> <a href="https://tokojaring.wordpress.com/" rel="nofollow">https://tokojaring.wordpress.com/</a> <a href="https://jualjaringfutsal.wordpress.com/" rel="nofollow">https://jualjaringfutsal.wordpress.com/</a> <a href="https://jaringfutsal.wordpress.com/" rel="nofollow">https://jaringfutsal.wordpress.com/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FAsyncTestCase&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FAsyncTestCase"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="AsyncTestCase" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+

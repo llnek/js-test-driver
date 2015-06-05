@@ -1,0 +1,3103 @@
+
+ 
+
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ <!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+ 
+ <meta name="ROBOTS" content="NOARCHIVE">
+ 
+ <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ 
+ <link rel="canonical" href="https://code.google.com/p/js-test-driver/wiki/UsingTheEclipsePlugin" />
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var CS_env = {"domainName": null, "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "profileUrl": null, "token": null, "relativeBaseUrl": "", "projectName": "js-test-driver", "loggedInUserEmail": null, "assetVersionPath": "https://ssl.gstatic.com/codesite/ph/8599073060794244502", "projectHomeUrl": "/p/js-test-driver"};
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ _gaq.push(
+ ['projectTracker._setAccount', 'UA-8962953-1'],
+ ['projectTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ 
+ </script>
+ 
+ 
+ <title>UsingTheEclipsePlugin - 
+ js-test-driver -
+ 
+ How to install and use the Eclipse plugin for JS Test Driver - 
+ Remote javascript console - Google Project Hosting
+ </title>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/ph_detail.css" >
+ 
+ 
+ 
+ <link type="application/atom+xml" rel="alternate" href="/feeds/p/js-test-driver/gitchanges/basic?path=/UsingTheEclipsePlugin.wiki&amp;repo=wiki">
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/8599073060794244502/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ 
+ 
+ #maincol {
+ padding-top: 0;
+ padding-bottom: 0;
+ }
+
+ 
+ </style>
+</head>
+<body class="t6">
+<script type="text/javascript">
+ window.___gcfg = {lang: 'en'};
+ (function() 
+ {var po = document.createElement("script");
+ po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(po, s);
+ })();
+</script>
+<div class="headbg">
+
+ <div id="gaia">
+ 
+
+ <span>
+ 
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FUsingTheEclipsePlugin&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FUsingTheEclipsePlugin" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if lte IE 7]>
+<div style="text-align:center;">
+Your version of Internet Explorer is not supported. Try a browser that
+contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
+<a href="http://www.google.com/chrome">Google Chrome</a>, or
+<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
+</div>
+<![endif]-->
+
+
+
+ <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
+ itemscope itemtype="http://schema.org/CreativeWork">
+ <tr style="height: 58px;">
+ 
+ 
+ 
+ <td id="plogo">
+ <link itemprop="url" href="/p/js-test-driver">
+ <a href="/p/js-test-driver/">
+ 
+ <img src="https://ssl.gstatic.com/codesite/ph/images/search-48.gif" alt="Logo" itemprop="image">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname">
+ <a href="/p/js-test-driver/"><span itemprop="name">js-test-driver</span></a>
+ </div>
+ 
+ <div id="psum">
+ <a id="project_summary_link"
+ href="/p/js-test-driver/"><span itemprop="description">Remote javascript console</span></a>
+ 
+ </div>
+ 
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="" type="text">
+ 
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+</div>
+
+ 
+<div id="mt" class="gtb"> 
+ <a href="/p/js-test-driver/" class="tab ">Project&nbsp;Home</a>
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/downloads/list" class="tab ">Downloads</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/w/list" class="tab active">Wiki</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/issues/list"
+ class="tab ">Issues</a>
+ 
+ 
+ 
+ 
+ 
+ <a href="/p/js-test-driver/source/checkout"
+ class="tab ">Source</a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <a href="https://code.google.com/export-to-github/export?project=js-test-driver">
+ <button>Export to GitHub</button>
+ 
+ </a>
+ 
+ 
+ 
+ 
+ 
+ <div class=gtbc></div>
+</div>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ <td class="subt">
+ <div class="issueDetail">
+<div class="isf">
+ 
+ <span class="inIssueList"> 
+ <span>Search</span>
+ <form action="/p/js-test-driver/w/list" method="GET" style="display:inline">
+ <select id="can" name="can" >
+ <option disabled="disabled">Search within:</option>
+ 
+ <option value="1" >&nbsp;All wiki pages</option>
+ <option value="3" >&nbsp;Featured pages</option>
+ <option value="2" selected="selected">&nbsp;Current pages</option>
+ 
+ 
+ <option value="4" >&nbsp;Deprecated pages</option>
+ 
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
+ autocomplete="off" ></span>
+ 
+ 
+ 
+ <input type="submit" value="Search" >
+ </form>
+ </span>
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ 
+ 
+ <td align="right" valign="top" class="bevel-right"></td>
+ </tr>
+</table>
+
+
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+<div id="maincol"
+ 
+>
+
+ 
+
+
+
+
+
+
+
+ <style type="text/css">
+ .delcom { background: #e8e8e8 }
+ .commentcontent {
+ margin: 2em;
+ padding: 0px 10px;
+ width: 66em;
+ }
+ .artifactcomment {
+ border-top: 3px solid #c3d9ff;
+ }
+ #commentform {
+ border-top: 3px solid #c3d9ff;
+ }
+ </style>
+
+<div id="wikipage">
+<table>
+ <tr>
+ 
+ 
+ <td style="vertical-align:top; padding-left:5px">
+ 
+ <div id="wikiheader">
+ 
+ <span style="font-size:120%;font-weight:bold">UsingTheEclipsePlugin</span>
+ &nbsp;
+ <div> 
+ 
+ <i>How to install and use the Eclipse plugin for JS Test Driver</i>
+ 
+ 
+ 
+ <div id="wikiauthor" style="float:right">
+ Updated <span title="Wed Jun  6 03:07:43 2012">
+ Jun 6, 2012</span>
+ 
+ by 
+
+ <a class="userlink"
+ href="/u/118380232301266653208/">corbinrs...@gmail.com</a
+>
+ 
+ </div>
+ </div>
+ </div>
+ 
+ <div id="wikicontent">
+ <div class="vt" id="wikimaincol">
+ <h1><a name="Introduction"></a>Introduction<a href="#Introduction" class="section_anchor"></a></h1><p>The eclipse plugin for JS Test Driver allows you to enjoy all the benefits of JS Test Driver right from the comfort of Eclipse. This includes starting and stopping the server, capturing browsers, running and rerunning tests, filtering and viewing results.  </p><h1><a name="How_to_install"></a>How to install<a href="#How_to_install" class="section_anchor"></a></h1><p>In Eclipse, go to <strong>Help</strong> -&gt; <strong>Install new Software</strong> (or whatever the similar menu item is in your version of eclipse. </p><p>Add the following url as an update site : <strong><a href="http://js-test-driver.googlecode.com/svn/update/" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/</a> </strong></p><p>Check the JS Test Driver checkbox and hit Next. </p><p>Hit Finish in the install details, accept any agreements and when Eclipse asks you to restart / apply changes, do so. </p><h1><a name="How_to_use_the_plugin"></a>How to use the plugin<a href="#How_to_use_the_plugin" class="section_anchor"></a></h1><ul><li><strong>Displaying the view</strong> </li></ul><p>Go to Window -&gt; Show View -&gt; Other, and select JS Test Driver view from the list. This should bring up the view from where you can interact with it. </p><ul><li><strong>Global Preferences</strong> </li></ul><p>Go to Eclipse preferences (Either Window -&gt; Preferences or Eclipse -&gt; Preferences, depending on your OS). You should see a JS Test Driver menu item on the left. When you select that, you should see the following options </p><ul><li><strong>Port</strong> : This is the port that the JS Test Driver Server will start on </li><li><strong>Browser paths</strong> : You can set the path to your browsers so that they can be launched from within eclipse itself. </li></ul><ul><li><strong>Server Panel</strong> </li></ul><p>The top part of the JS Test Driver view is the Server info panel. The green play button is to start the server. Once you click on that, it should change to a stop button, and the NOT RUNNING text should change to the capture URL. You can either copy paste this URL in a browser to capture it as a slave, or click one of the browser icons to launch the browser (only if you have set the browser path in the global preferences) to automatically capture it. </p><p>Once you have a browser captured, the icons should turn lit, and the bar should turn from yellow to green. This means you are now ready to run the tests. </p><ul><li><strong>Running the tests</strong> </li></ul><p>There are a few ways to run the tests. The simplest way to run all your JS Test Driver tests is to go to Run Configurations and then add a new JS Test Driver configuration. Simply select your project and config file, and you are ready to run all your tests. </p><p>All other ways to run the tests require that you have a run configuration setup first. One you have done that, another way to run the tests once you have your browsers captured is to right click inside the text editor itself, and click Run as -&gt; JS Test Driver Test. Inside the editor, it is context sensitive. By default, it will run all the tests inside that file. If you click on a line which has a test method definition, it will run just that test. If you select a bunch of lines, it will run only the tests in the highlighted portions. </p><p>The third way to run the tests is by selecting a js test file (or multiple) in the package and right clicking, selecting Run As -&gt; JS Test Driver test. It will run all the tests in those files. </p><ul><li><strong>Test Results View</strong> </li></ul><p>Now that you have run your tests, you can see the results similar to JUnit in the test results tree. It is grouped by Browser, then by Test case and finally all the test results. You can see the failure message or any log statements you had in your tests by double clicking a particular test.  </p><p>The icons at the top also allow you to interact with tests. The Refresh Icon refreshes all captured browsers so that it holds a clean state. The Rerun button reruns the last launch configuration, and does nothing if you haven&#x27;t previously run anything. And the last blue and red cross button filters your test results to show only failed tests. </p>
+ </div>
+ </div>
+ </td><tr>
+</table>
+ </div>
+
+
+ 
+ <div id="wikicommentcol">
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+<div class="collapse">
+
+
+ 
+
+
+<div id="commentlist">
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101869448663234055860/">toni.str...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 13 06:32:09 2009">Aug 13, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>The correct update site is <a href="http://js-test-driver.googlecode.com/svn/update/" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/</a> (without the asterisk). Also, if the software list contains an item that says &quot;There are no categorized items&quot;, untick the &quot;Group items by category checkbox.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100705503770773361197/">persson....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 13 07:04:44 2009">Aug 13, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;d love to see a similar plugin to Visual Studio!  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/117477146648132059592/">banqj...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Aug 14 18:42:27 2009">Aug 14, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I use Eclipse 3.5, update <a href="http://js-test-driver.googlecode.com/svn/update/" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/</a>  no anything, but I use: <a href="http://js-test-driver.googlecode.com/svn/update/site.xml" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/site.xml</a> that&#x27;s ok ,but in eclipse&#x27;s perference there is no Server Panel </p><p>do you support Eclipse 3.5? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/106006280957932104643/">ybb...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Aug 23 16:57:36 2009">Aug 23, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I have installed the eclipse plugin and download the helloWorld example, however  </p><p>1.I got 5 errors,like function  assertEquals(String,any) is undefined,function <a href="/p/js-test-driver/wiki/TestCase">TestCase</a>(String) is undefined.Why this happening. 2.I start my serer and capture the browsers and running the tests.Insteading getting the test result ,what I got is  consecutive Waiting for a slot...  </p><p>Any help on this is much appreciated. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/105597423559344045208/">lord.m...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Aug 28 09:29:45 2009">Aug 28, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;ve finally got it working. 3 things. 1: after you create a config file, restart your ide. 2: having a non-existent dir in your config&#x27;s include, results a nullpointerexception when trying to run. 3: Konqueror on linux: &#x27;null 0 Linux x86_64&#x27; </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/shyamseshadri/">shyamseshadri</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Sep  2 10:23:22 2009">Sep 2, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>@banqjdon: Yeah, we support Eclipse 3.5, I work extensively (almost exclusively) on it. Eclipse preferences should have a JS Test Driver, not a Server panel. The server panel is part of the JS Test Driver View. </p><p>@ybbest: Did you define a Run configuration. I think its necessary to define atleast one run configuration before you can use any of the other shortcuts, as that is the only way we know right now where your conf file is. </p><p>@lord.meza: Yes, I have a fix for that which should be going in soon, you should be able to see an update for it within the next week mostly. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/108052706885101090470/">alexande...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 17 05:36:35 2009">Nov 17, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Not sure if it is an eclipse-plugin issue, but having the test files in the same directory as the conf file does not work with the globbing: </p><p>load: <blockquote>- <strong>.js 
+</blockquote></strong></p><p>yields the aforementioned NPE. A workaround is to use </p><p>load: <blockquote>- ../dir/<strong>.js 
+</blockquote></strong></p><p>if you happen to know the name of the parent directory. </p><p>Also, the run configuration does not allow me to select a jsTestDriver.conf file in a subdirectory of the chosen eclipse project. It only lists those in the root directory. However, manually entering the path (eg. sub/directory/jsTestDriver.conf) in the &quot;Conf File:&quot; field works for me. </p><p>Thanks for this nice tool! I really like the quick way to test across multiple browsers. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/108052706885101090470/">alexande...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 17 05:38:23 2009">Nov 17, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>Oh, the wiki markup broke the formatting of my previous comment (unfortunately no preview and no comment editing). Here are the two conf samples again: </p><pre class="prettyprint">load:
+  - *.js
+
+load:
+  - ../dir/*.js</pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115302833224308230455/">acmef...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Dec  8 18:30:11 2009">Dec 8, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>I have problem to install this plugin in my eclipse, I tried all these eclipse version 3.3.2, 3.3.1, 3.4 and all failed. For 3.3.1 and 3.4 it said it needs eclipse to install something else before install the new plugin. For 3.3.2,after installing, it even doesn&#x27;t show up when I check the Help-&gt;AboutEclipse<a href="/p/js-test-driver/w/edit/AboutEclipse">?</a>-&gt;plugin-details It&#x27;s weird. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115302833224308230455/">acmef...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Dec  8 19:15:35 2009">Dec 8, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>When I install it to eclipse3.4.0, comes up with a error Cannot find a solution satisfying the following requirements Match[requiredCapability: org.eclipse.equinox.p2.iu/org.eclipse.platform.doc.user/[3.4.1.r341_v20080808-0800,3.4.1.r341_v20080808-0800]]. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115302833224308230455/">acmef...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Dec  8 19:28:14 2009">Dec 8, 2009</span>
+ <div>
+<div class="commentcontent">
+<p>while when I install it at eclipse 3.5.1, it works. So maybe it has a version requirement for Eclipse :( </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/109294712722798210172/">vissuabc...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jan 22 06:52:38 2010">Jan 22, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I tried to install it in eclipse 3.3.2 , it successfully loaded in the plugins directory. But i am unable to view the jsTestDriver in my Eclipse nor in the plugin details. </p><p>Any help for me.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/109294712722798210172/">vissuabc...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 23 05:17:24 2010">Jan 23, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Its working fine with eclipse 3.5 !!!  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112332112326319989426/">jcban...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 23 06:35:17 2010">Jan 23, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I have not yet had any luck getting my tests to run - I am encountering the NPE that I think is referred to above.  I have tried a variety of variations for the load path with no luck.  I am trying to run this on Eclipse 3.5.1 on OS X Snow Leopard.  The plugin installs fine, the server comes up and captures Chrome find, but when I run the RunConfig<a href="/p/js-test-driver/w/edit/RunConfig">?</a>, it just gives me an NPE.  It would be nice if a working Eclipse Project archive was also available that did something simple so that I could confirm the error is on my end.  I am new to Javascript and having the JS unit testing capability would be great for learning it.  A pointer in the right direction would be much appreciated! </p><pre class="prettyprint">java.lang.NullPointerException at com.google.jstestdriver.eclipse.ui.launch.JsTestDriverLaunchConfigurationDelegate.launch(JsTestDriverLaunchConfigurationDelegate.java:90)</pre><p>using </p><pre class="prettyprint">-- Test Case --
+var LogLevel = {
+    &#x27;ERROR&#x27;: 1
+}
+var LogLevelTest = TestCase(&quot;LogLevelTest&quot;);
+LogLevelTest.prototype.testLogLevels = function() {
+   assertEquals(1, LogLevel.ERROR);
+}
+
+-- Config File Contents --
+server:	http://localhost:9999
+load: 
+	- ./src/*.js</pre>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102133508657342013280/">gwku...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Jan 26 13:26:25 2010">Jan 26, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>jcbandxi: Considering how far the load entry is indented in your config file could it be you used a tab instead of spaces? That could be what&#x27;s causing yout NPE. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/109294712722798210172/">vissuabc...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Feb 14 06:15:32 2010">Feb 14, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>How to run a single test using the run config? </p><p>I am able to run the whole tests at once , but unable to find a way running a single file (or) running a single test method. </p><p>Any help? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/unigossi/">unigossi</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Mar 15 10:44:28 2010">Mar 15, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>What do I need to do, that &quot;Rerun last configuration&quot; works? It just does nothing. I created a run configuration. I am able to run all tests and see the result in the JSTestDriver View :) When I rightclick either in the explorer or a file, then and select Run As &gt; JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> than I get the message: No Launch Configurations found for the current file. How to add them? Thanks :)  </p><p>P.S. Is it normal that run x/y and y is counting up each run? but when I have red results, corrected the issues, run again and the results turn green, my bar is still red? Do I handle it wrong or should I bug report that? </p><p>Cheers gossi </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/104480319336390796337/">alxd...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Mar 19 23:05:00 2010">Mar 19, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m having the same problems as unigossi after updating from the code released late last year. Basically the plug-in isn&#x27;t working well enough to be usable on 3.5.2 with nothing installed alongside the runner besides the web tools platform. </p><p>This is a great tool! I&#x27;m missing it! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102455392571963064668/">chris.r....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 28 13:11:33 2010">Apr 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>On Eclipse 3.5.2, I receive the following when I try to run the config for my whole project: </p><p>eclipse.buildId=M20090917-0800 java.version=1.6.0_16 java.vendor=Sun Microsystems Inc. BootLoader<a href="/p/js-test-driver/w/edit/BootLoader">?</a> constants: OS=win32, ARCH=x86, WS=win32, NL=en_US Framework arguments:  -showlocation -product org.eclipse.epp.package.jee.product Command-line arguments:  -os win32 -ws win32 -arch x86 -showlocation -product org.eclipse.epp.package.jee.product </p><p>Error Wed Apr 28 16:09:04 EDT 2010 Plug-in &quot;com.google.eclipse.javascript.jstestdriver.ui&quot; was unable to instantiate class &quot;com.google.eclipse.javascript.jstestdriver.ui.view.TestResultsPanel<a href="/p/js-test-driver/w/edit/TestResultsPanel">?</a>&quot;. </p><p>java.lang.InstantiationException<a href="/p/js-test-driver/w/edit/InstantiationException">?</a>: com.google.eclipse.javascript.jstestdriver.ui.view.TestResultsPanel<a href="/p/js-test-driver/w/edit/TestResultsPanel">?</a> at java.lang.Class.newInstance0(Class.java:340) at java.lang.Class.newInstance(Class.java:308) at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:170) at org.eclipse.core.internal.registry.ExtensionRegistry<a href="/p/js-test-driver/w/edit/ExtensionRegistry">?</a>.createExecutableExtension(ExtensionRegistry<a href="/p/js-test-driver/w/edit/ExtensionRegistry">?</a>.java:874) at org.eclipse.core.internal.registry.ConfigurationElement<a href="/p/js-test-driver/w/edit/ConfigurationElement">?</a>.createExecutableExtension(ConfigurationElement<a href="/p/js-test-driver/w/edit/ConfigurationElement">?</a>.java:243) at org.eclipse.core.internal.registry.ConfigurationElementHandle<a href="/p/js-test-driver/w/edit/ConfigurationElementHandle">?</a>.createExecutableExtension(ConfigurationElementHandle<a href="/p/js-test-driver/w/edit/ConfigurationElementHandle">?</a>.java:51) at com.google.eclipse.javascript.jstestdriver.ui.launch.JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.notifyAllListeners(JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.java:86) at com.google.eclipse.javascript.jstestdriver.ui.launch.JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.launch(JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.java:61) at org.eclipse.debug.internal.core.LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.launch(LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.java:853) at org.eclipse.debug.internal.core.LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.launch(LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.java:703) at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866) at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1069) at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102455392571963064668/">chris.r....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 28 16:35:15 2010">Apr 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>It would have helped had I installed 1.1.1.b instead of 1.1.1.  No problems thus far. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/103163039499239114020/">Andrew.W...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 19 12:27:39 2010">Aug 19, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I had problems, Eclipse would just crash when I ran a test, but there were 2 versions from which to choose when installing.  Make sure you take the latest. 1.1.1.e at the moment... </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/114919520617173179677/">brianros...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Aug 26 14:44:49 2010">Aug 26, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>You guys rule! JSTestDriver is awesome! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/davi.fol@gmail.com/">davi.fol@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 21 03:11:02 2010">Sep 21, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m blown away by JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>- I&#x27;ve been hoping for something like this for quite the while- well done! I had posted earlier with some issues in relation to the configuration file- just in case there are any Aptana users out there, I can confirm that JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> plugin works great with it- the only caveat is that the conf file MUST be in the project root or you won&#x27;t be able to load it in run configurations. </p><p>There is one downside (had to be expected- Aptana can be buggy as hell), and thats in relation to the &#x27;run tests on save&#x27; option- if selected, a very disruptive dialog aksing &#x27;[YourFileName.js] has been modified. Save changes?&#x27; pops up AS you&#x27;re typing in source files. Has anyone else experienced this in an eclipse environment? I believe its an Aptana bug, but I ask to be sure. </p><p>One question I do have, is in relation to the configuration file- how can I write a pattern that will load in scripts from a folder hierarchy of ad-hoc depth? I would prefer to not have to explicitly declare each source and test file individually. Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/timo.j.sand@gmail.com/">timo.j.sand@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Sep 24 05:53:53 2010">Sep 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Does this plugin still work? I just tried to install it on my 3.5, but I don&#x27;t get any preferences or view&#x27;s.  Any help would be appreciated. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/110552114143335514970/">art.ja...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 28 14:49:14 2010">Sep 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Do you have instructions for IBM Rational® Application Developer™ for WebSphere<a href="/p/js-test-driver/w/edit/WebSphere">?</a>® Software Version: 7.5.x? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116667405217788300183/">mikebru...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Sep 29 03:24:49 2010">Sep 29, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Eclipse 3.5.2 with JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> 1.1.1e not getting any prefs or view either, no errors reported. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112160228314526354022/">craigosh...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Oct  7 08:52:33 2010">Oct 7, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m running into a problem with JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> and Aptana Studio 2, and I&#x27;m not sure how to proceed. The plugin installs fine. I hit the green play button and capture a browser, so far so good. I create a very basic run configuration--call it MyTests<a href="/p/js-test-driver/w/edit/MyTests">?</a>-- and that seems to work fine. When I try running it though, Aptana says &quot;Launching MyTests<a href="/p/js-test-driver/w/edit/MyTests">?</a>&quot;, gets to 57% and basically never completes...no tests get run. Checking the log reveals a connection refused exception (exception text at the end). My initial assumption was something with my firewall, but no dice. I opened the ports, I disabled the firewall, and even more, I&#x27;m experiencing the same behavior on Windows 7 and my MacBook<a href="/p/js-test-driver/w/edit/MacBook">?</a> (Snow Leopard). </p><p>Using JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> from the command line works fine. Any ideas? Here&#x27;s the exception I&#x27;m seeing: </p><p>!ENTRY com.google.eclipse.javascript.jstestdriver.ui 4 0 2010-10-06 10:35:03.514 !MESSAGE Runtime exception happened in JS Test Driver !STACK 0 </p><p>Test Errors: <blockquote>atFailures during test run. 
+at com.google.jstestdriver.BrowserActionsRunner<a href="/p/js-test-driver/w/edit/BrowserActionsRunner">?</a>.run(BrowserActionsRunner<a href="/p/js-test-driver/w/edit/BrowserActionsRunner">?</a>.java:97) 
+at com.google.jstestdriver.ActionRunner<a href="/p/js-test-driver/w/edit/ActionRunner">?</a>.runActions(ActionRunner<a href="/p/js-test-driver/w/edit/ActionRunner">?</a>.java:54) 
+at com.google.eclipse.javascript.jstestdriver.ui.launch.JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.launch(JsTestDriverLaunchConfigurationDelegate<a href="/p/js-test-driver/w/edit/JsTestDriverLaunchConfigurationDelegate">?</a>.java:65) 
+at org.eclipse.debug.internal.core.LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.launch(LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.java:853) 
+at org.eclipse.debug.internal.core.LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.launch(LaunchConfiguration<a href="/p/js-test-driver/w/edit/LaunchConfiguration">?</a>.java:703) 
+at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:866) 
+at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1069) 
+at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) 
+</blockquote>Caused by: <blockquote>atjava.lang.RuntimeException<a href="/p/js-test-driver/w/edit/RuntimeException">?</a>: java.net.ConnectException<a href="/p/js-test-driver/w/edit/ConnectException">?</a>: Connection refused: connect 
+</blockquote>!SESSION 2010-10-06 10:35:24.026 ----------------------------------------------- eclipse.buildId=unknown java.version=1.6.0_13 java.vendor=Sun Microsystems Inc. BootLoader<a href="/p/js-test-driver/w/edit/BootLoader">?</a> constants: OS=win32, ARCH=x86, WS=win32, NL=en_US Framework arguments:  -application com.aptana.ide.desktop.integration.Application Command-line arguments:  -os win32 -ws win32 -arch x86 -application com.aptana.ide.desktop.integration.Application </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116979929415361424246/">yongr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Oct 13 22:50:23 2010">Oct 13, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>The Conf File combo box in the run configuration UI doesn&#x27;t find and display the configuration file I have in the project. It found the file if I put it at the root level but I can&#x27;t put it at the root with the current set-up I have... I don&#x27;t know how it tries to find the file but it might be easier if it&#x27;s a browser or simple input field... </p><p>Also, it&#x27;d be great if the plug-in supports the new basePath option added to 1.2.2. </p><p>I can still use other means to run the tests but it&#x27;d be great if I can use the plug-in. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">ZhongP...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Tue Nov 16 00:35:30 2010">Nov 16, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I use Eclipse 3.6, update <a href="http://js-test-driver.googlecode.com/svn/update/" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/</a> will go wrong, but I use: <a href="http://js-test-driver.googlecode.com/svn/update/site.xml" rel="nofollow">http://js-test-driver.googlecode.com/svn/update/site.xml</a> but got error info:  content.xml not found? </p><p>do you support Eclipse 3.6? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112718092609861917142/">dkamin...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Nov 17 12:57:31 2010">Nov 17, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I tried specifying the location of the configuration file like alexander.klimetschek said, but it does not work for me. </p><p>+1 to what yongrokc said, it would be great if we could specify where the configuration files are instead of keeping them in the root project. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/106602801401423020369/">chrak...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Nov 18 08:27:53 2010">Nov 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Is it possible to run the tests in Eclipse by using a keyboard shortcut instead of rightclicking and selecting &quot;Run As -&gt; JS Test Driver test&quot;? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115266263719265219776/">spring8...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Nov 24 20:19:07 2010">Nov 24, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I use eclipse3.6.1, when i run this plugin, i got the following errors: </p><p>An internal error occurred during: &quot;Launching New_configuration (1)&quot;. org.slf4j.Logger.trace(Ljava/lang/String;Ljava/lang/Object;)V </p><p>Any help on this is much appreciated !! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/jhlagado/">jhlagado</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Nov 28 20:48:28 2010">Nov 28, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Having the same problem with Aptana installed as cosh...@yahoo.com </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100084553484221344639/">Arjan.Kr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Dec  5 12:26:27 2010">Dec 5, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I had the same problem as cosh...@yahoo.com with Eclipse Helios Service Release 1 on Windows 7. I updated the js-test-driver plugin from 1.1.1.c to 1.1.1.e and that seemed to solve the problem. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116432477464669782086/">kranthiy...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Dec 17 13:10:55 2010">Dec 17, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>I am using eclipse 3.5.1 .i cant able to  install test driver plugin for eclipse . I that link is still working ??? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/unigossi/">unigossi</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Dec 18 09:30:53 2010">Dec 18, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Are the release versions of jsdt and the eclipse plugin kept in sync? At the time of writing, the current version of the eclipse plugin is 1.1.1e and jsdt is 1.2.2, are they the same? From the point of view of a user this makes total sense. If not, could you update the eclipse plugin? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100138419743707614139/">jean.mil...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 29 06:21:54 2010">Dec 29, 2010</span>
+ <div>
+<div class="commentcontent">
+<p>Can the eclipse plugin use the code coverage plugin ? </p><p>I would have expected coverage info to be display in the JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> view along the tests results. But it&#x27;s not. </p><p>I just installed jstd 1.2.2 and its plugin for eclipse 3.5.2 (on linux). I also installed the qunit adapter. All of this works fine ! Then I downloaded the code coverage plugin (coverage-1.2.2.jar) and wondered where to save it. I found that JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>.jar is at this path : </p><pre class="prettyprint">/home/jean/.eclipse/org.eclipse.platform_3.5.0_155965261/configuration/org.eclipse.osgi/bundles/1224/1/.cp/lib/JsTestDriver.jar</pre><p>So I tried to save coverage-1.2.2.jar here : </p><pre class="prettyprint">/home/jean/.eclipse/org.eclipse.platform_3.5.0_155965261/configuration/org.eclipse.osgi/bundles/1224/1/.cp/lib/plugins/coverage-1.2.2.jar</pre><p>Then I used the following config file : </p><pre class="prettyprint">server: http://localhost:42442
+
+plugin:
+ - name: &quot;coverage&quot;
+   jar: &quot;/home/jean/.eclipse/org.eclipse.platform_3.5.0_155965261/configuration/org.eclipse.osgi/bundles/1224/1/.cp/lib/plugins/coverage-1.2.2.jar&quot;
+   module: &quot;com.google.jstestdriver.coverage.CoverageModule&quot;
+   
+load:
+  # Add these lines to load the equiv function and adapter in order, before the tests
+  # (assuming they are saved to tests/qunit/)
+  - tests/qunit/equiv.js
+  - tests/qunit/QUnitAdapter.js
+ 
+  # This is where we load the qunit tests
+  - tests/*.js
+ 
+  # And this loads the source files we are testing
+  - js/*.js</pre><p>No way. It does not work. Tests run fine. But I can&#x27;t see any code coverage result. What am I doing wrong ? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111764273672221448826/">RodrigoM...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jan  1 17:13:26 2011">Jan 1, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Hello - I installed jsTesDriver on two systems:  a) MAC, 10.6.5 / Eclipse 3.6.1 (Java EE IDE for Web Developers. Version: Helios Service Release 1 Build id: 20100917-0705) - The View and Preferences are not shown; the plugin is in eclipse/plugins. It failed after restarting Eclipse AND the Computer.  b) Windows 7 Home Premium, same Eclipse. The Preferences is shown and it is editable; the View is not and I was not able to get it to display even after restarting Eclipse and the Computer. </p><p>Any suggestions would be much appreciated. Thanks in advance! RodrigoMattosoSilveira<a href="/p/js-test-driver/w/edit/RodrigoMattosoSilveira">?</a>@gamil.com One the  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102177867184629471950/">rbosin...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Jan 31 16:41:03 2011">Jan 31, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Make sure you install the newest version! I Installed 1.1.1c and Eclipse crashed on me every time I tried to run a test. I then realized there was a version 1.1.1e available as well so I tried that and it all worked. </p><p>Very cool. Thanks! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/107499434505603267091/">dominic....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Feb 10 15:06:28 2011">Feb 10, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m using Eclipse Helios SR1 and js-test-driver 1.1.1e on Ubuntu, and for me it&#x27;s really unreliable. I can get at most 1 reliable run before I have to close the browser window and try again. It seems to boil down to this: </p><ol><li>The first time I save a file and it runs the tests it may say it&#x27;s passed when it should fail. </li><li>The second time (or this can be the first time) it gives me a reliable result. </li><li>Subsequent times it just always posts the same result, regardless. </li></ol><p>Can anyone help? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/107499434505603267091/">dominic....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Feb 11 02:47:37 2011">Feb 11, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Okay, I can definitely confirm that the js-test-driver Eclipse plug-in isn&#x27;t working for me on Ubuntu, but does work for me on WindowsXP with the same setup: </p><ol><li>Eclipse Helios SR1 </li><li>js-test-driver 1.1.1e </li><li>Chrome 9 + Firefox 4 </li></ol><p>The only thing different in my home and work setups is the OS. Tonight I&#x27;ll try seeing if this problem is specific to the Eclipse plug-in, or affects the command line version too. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/107499434505603267091/">dominic....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Feb 12 09:57:52 2011">Feb 12, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Okay, I&#x27;ve just tried again at home on my Ubuntu machine. I did the following: </p><ol><li>Disabled the &#x27;Run on Every Save&#x27; feature. </li><li>Continued to start the server via the Eclipse plug-in. </li><li>But, instead, used the command line to run the tests manually after each save. </li></ol><p>And things now work perfectly for me. I&#x27;m able to break the code and see the tests fail, and then fix it again, and see everything working again. So there is something specific to running the tests through the Eclipse plug-in on Ubuntu that doesn&#x27;t seem to work. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/thomas.0007/">thomas.0007</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 16 05:23:34 2011">Feb 16, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>How do I update to version 1.3.0?  Can I configure the plugin to have  1) more then one set of tests for one project all running when I save a file.  2) more then one Eclipse projects with their own tests.  </p><p>What about if the jar accepts multiple .conf files or even scans the subdirectories for .conf files and combine all tests?  </p><p>Use case: Multiple developers can have their code spreaded all over the place in a large project folder structure. It would be much easier to have an option to include all .conf files in a single test for the team tests, but keeping every developer&#x27;s .conf files in their original places. </p><p>Can you give an example how to start and execute tests on a remote server. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/107499434505603267091/">dominic....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Feb 16 06:03:33 2011">Feb 16, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Looks like the new 1.3.0 release may fix the Ubuntu problem I&#x27;ve been having, and general reliability problems I&#x27;ve noticed on both platforms. </p><p>Also, like thomas.0007 above, I could really do with the ability to be able to put conf files anywhere, and not just the project root folder. At my company, for example, the root folder just contains all the branches, and so it doesn&#x27;t make sense to have conf files outside of the branch. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/unigossi/">unigossi</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Feb 20 03:14:51 2011">Feb 20, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I already created an issue on that #175 </p><p>How to update to the 1.3.1 release, I still have the 1.1.1e EclipsePlugin<a href="/p/js-test-driver/w/edit/EclipsePlugin">?</a> Version installed :( Can you help me? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/107588662809909049793/">yangyu...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar 27 20:38:08 2011">Mar 27, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>these changes allow you to select conf file in any other folders than just the root folder of the project. </p><p><a href="http://code.google.com/p/js-test-driver/issues/detail?id=175#c1" rel="nofollow">http://code.google.com/p/js-test-driver/issues/detail?id=175#c1</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">DanSavag...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Fri Apr  1 10:24:42 2011">Apr 1, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>In the last paragraph titled, &quot;Test Results View&quot;, it says, &quot;And the last blue and red cross button filters your test results to show only failed tests.&quot; </p><p>I know that the Green check mark means it passed the test and that the red cross means if failed. </p><p>What does the blue cross mean? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/104481274931857027841/">karsten....@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Apr 19 01:14:58 2011">Apr 19, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Very nice work, I really like it! When will you be updating the eclipse plugin to version 1.3.2 of the test runner. I would really like to use JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> from within eclipse and also have the asynchronous functionality available. At the moment i get the error message &quot;queue.call is not a function&quot;, so i am asuming, that this is not deliverd to the slave-browsers. </p><p>Kind Regards </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/106412877363011117782/">sharif.m...@googlemail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri May 13 06:45:12 2011">May 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I also have the same problem. Works fine using the latest jar from the commmand prompt but get &quot;queue.call is not a function&quot; using the Eclipse plugin.  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/103130397142755246536/">tobysev...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jun 11 17:22:29 2011">Jun 11, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Hi there, </p><p>I&#x27;m keen to see the asynctestcase from inside Eclipse - I can do it from Visual Studio! </p><p>cheers </p><p>Toby </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/Ilya.Kharlamov/">Ilya.Kharlamov</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Jun 17 02:44:39 2011">Jun 17, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>If you use Eclipse 3.6 Helios and see the 57% error, update your plug-in to version 1.1.1e or newer. Version 1.1.1c does not work with 3.6 </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100581580145742213727/">personal...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Aug 21 10:51:43 2011">Aug 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Here is a walk through I made to get js-test-driver running on Windows XP with Eclipse. </p><p><a href="http://machinesentience.com/how_to_install_js-test-driver_on_windows_xp_with_eclipse.html" rel="nofollow">http://machinesentience.com/how_to_install_js-test-driver_on_windows_xp_with_eclipse.html</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118398342993213098723/">jstrim...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 22 16:08:45 2011">Aug 22, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I am having the same problem, &#x27;queue.call is not a function&#x27;, when running the Eclipse plugin in Aptana Studio 3.0. Runs fine from the console. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/112864794407307394015/">serge.bo...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 29 02:28:09 2011">Aug 29, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>The same problem, &#x27;queue.call is not a function&#x27;, in Eclipse Indigo 3.7. Runs fine from the console. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/102671932577045530459/">jorgefia...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Sep 13 07:35:23 2011">Sep 13, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Same problem with queue.call. Please vote on <a href="http://code.google.com/p/js-test-driver/issues/detail?id=264" rel="nofollow">http://code.google.com/p/js-test-driver/issues/detail?id=264</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101234996567252289569/">frank.tr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Sep 21 10:51:34 2011">Sep 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m having a problem with seeing the failure messages using 1.1.1e on both Indigo and Helios. Right now, when I highlight a test case that has failed, I get no information about why the failure occurred; it&#x27;s simply blank. Any ideas why? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101234996567252289569/">frank.tr...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Sep 21 10:55:52 2011">Sep 21, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>Ah, reading further this seems to be caused by new versions of Chrome and Firefox recently. <a href="http://code.google.com/p/js-test-driver/issues/detail?id=263" rel="nofollow">http://code.google.com/p/js-test-driver/issues/detail?id=263</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101180535397232136883/">kaniar...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Nov  4 05:37:09 2011">Nov 4, 2011</span>
+ <div>
+<div class="commentcontent">
+<p>queue.call problem, vote on <a href="http://code.google.com/p/js-test-driver/issues/detail?id=264" rel="nofollow">http://code.google.com/p/js-test-driver/issues/detail?id=264</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/jcastelain/">jcastelain</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Jan 12 07:01:54 2012">Jan 12, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>For me with Eclipse 3.6 I can install the plugin, but when I try to Run as JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a> nothing happens, althought the server is started and I have a <a href="/p/js-test-driver/wiki/TestCase">TestCase</a> ... JsTestDriver<a href="/p/js-test-driver/w/edit/JsTestDriver">?</a>.jar works fine used on the command line. Any solution? Or is this yet another useless Eclipse plugin? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111504292293339390882/">david.p....@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sat Jan 28 18:25:21 2012">Jan 28, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I&#x27;m on Eclipse Indigo and almost gave up, getting a NullPointerException<a href="/p/js-test-driver/w/edit/NullPointerException">?</a>? with no other details. The command-line version didn&#x27;t work either, telling me  </p><p>Unexpected Runner Condition: Oh Snap! No server defined!  </p><p>even though I clearly had one running. I noticed I had misspelled &quot;jsTestDriver.conf&quot;, and after fixing that, it worked. I guess it&#x27;s easier to write &quot;Oh Snap!&quot; instead of &quot;Can&#x27;t find conf file named &#x27;...&#x27;&quot; (or whatever is actually wrong).  </p><p>Once that was taken care of, the plug-in worked almost as advertised. Double-clicking on a failed test does nothing. I&#x27;m using plugin vsn 1.1.1e. Well, I was. Back to the command-line...  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/cfchris/">cfchris</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Feb  8 13:01:11 2012">Feb 8, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I can run my tests in Eclipse. But, when I double-click the tests, I don&#x27;t see any results. If I run the test repeatedly, empty lines are added to the console. The console is open and has a title of &quot;JSTestDriver&quot;. </p><p>I am running JS Test Driver version 1.1.1.e in Eclipse Version: 3.7.1.r37x_v20110729-9gF7UHOxFtniV7mI3T556iZN9AU8bEZ1lHMcVK </p><p>Initially I had some errors with paths in my config file. Those showed up in the log. Nothing new is showing up in the log. Any ideas? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/103392208903218831185/">mark.bro...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu Feb  9 04:47:47 2012">Feb 9, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I get the same, no textual output to suggest why the test failed in Chrome. </p><p>However if I run the tests through IE it returns the textual output. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118014816308196797109/">realjo...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May 23 03:17:04 2012">May 23, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>How can I install the coverage plugin to use it in Eclipse? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/mikegleasonjr/">mikegleasonjr</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed May 23 20:15:28 2012">May 23, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I get some null pointer exception if I leave the config file with some empty sections like: </p><p>exclude: </p><p>serve: </p><p>proxy: </p><p>plugin: </p><p>Removing empty sections fixes NPE :) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118014816308196797109/">realjo...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Thu May 24 00:20:12 2012">May 24, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>Another question: in addition to add coverage plugin in eclipse, I also wanted to know whether there is a way to reset JSTestdriver console in Eclipse each time I run a set of tests. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/116321170205499110122/">Eyesonl...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue May 29 19:36:19 2012">May 29, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>When i check the &quot;Run on every save&quot; checkbox in the run configuration launcher in Eclipse, The tests only run once and and consequent save will result in a test job that hangs and doesn&#x27;t run the tests again. So i can only run the tests once every time i start the server! I&#x27;m using Windows 7 64 bit with Eclipse Indigo Service Release 1, Build id:20110916-0149. The .conf file is in a separate directory than the tests and src. i.e web folder -&gt; .conf file, src folder, test folder Any help would be appreciated. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/113207880548425442525/">ben.pari...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Jul 22 16:43:06 2012">Jul 22, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I just want to iterate again the comment by toni.str...@gmail.com which helped me fix a problem: If the software list contains an item that says &quot;There are no categorized items&quot;, untick the &quot;Group items by category checkbox. This fixed errors I was getting after an initial install when I displayed or tried to configure the plugin tab:  </p><p>&quot;Could not create the view: Plugin com.google.jstestdriver.eclipse.ui was unable to load class com.google.jstestdriver.eclipse.ui.views.JsTestDriverView<a href="/p/js-test-driver/w/edit/JsTestDriverView">?</a>?&quot; or &quot;java.lang.ClassNotFoundException<a href="/p/js-test-driver/w/edit/ClassNotFoundException">?</a>?: com.google.jstestdriver.eclipse.ui.views.JsTestDriverView<a href="/p/js-test-driver/w/edit/JsTestDriverView">?</a>?&quot;  </p><p>Thanks Toni!  </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/100923793849881426374/">asher.st...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Tue Aug  7 06:29:52 2012">Aug 7, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>I installed the plug-in with June and everything works as described except for navigation to failed test source by double click. It seems that Jetty has a problem with URL syntax: <a href="http://127.0.0.1:42442/test/test/GreeterTest.js:4:4" rel="nofollow">http://127.0.0.1:42442/test/test/GreeterTest.js:4:4</a>. That what I get when I paste this URL in Chrome: </p><p>HTTP ERROR 404 </p><p>Problem accessing /test/test/GreeterTest<a href="/p/js-test-driver/w/edit/GreeterTest">?</a>.js:4:4. Reason: </p><blockquote>NOT_FOUND 
+</blockquote><p>Powered by Jetty:// </p><p>Any ideas? </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/115844465204731828022/">dietrich...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Aug 17 11:46:43 2012">Aug 17, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>The link to the hello world example is pointing to the git root. Where are the samples now? Have they been removed? </p><p>Best regards, Dietrich </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/118333636803682417108/">ZCZho...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Mon Aug 20 00:32:59 2012">Aug 20, 2012</span>
+ <div>
+<div class="commentcontent">
+<p>i have installed the plugin well, but i have problem in starting the server ! it said that&quot; error starting the server on 4224&quot;, port number 4224  is written in the config file. who can help me , best wishes ! </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/103494916558394226478/">marc.c.j...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Sun Mar  3 08:29:40 2013">Mar 3, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Run on Every Save hangs after the first run.  Is there any fix for this?  I&#x27;m using Helios Build id: 20110301-1815 on windows7 64 bit </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/101121134509346017744/">andrew.m...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Apr 19 07:27:13 2013">Apr 19, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Is there a way to make jsTestDriver automatically reset the server upon each test run? </p><p>My problem: after resetting the server, the tests run fine on the first time. However, on subsequent test runs the server sends the same tests multiple times to the slave. This has the effect of making the tests take much longer to run, and the UI struggles to give faithful results. </p><p>If I put a single alert() in one of the test specs, then on the first run I get a single popup in the browser slave, but the Nth run make the alert pop up several times (up to N times, but the exact number is indeterminate). </p><p>My workaround is to manually stop and start the server from the Eclipse jsTestDriver tab. Restarting the slave browser does not fix the problem. </p><p>I&#x27;m using the jsTestDriver plugin (1.3.4e) in Eclipse (Indigo SR2; 20120216-1857) with Jasmine and Chrome (v26) slave on OSX Mountain Lion. </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">ramanjul...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Sun Aug 25 23:26:55 2013">Aug 25, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Hi All, </p><p>To see the JSTD in windows--&gt;preferences, all you have to do is after installing you have to restart the machine. </p><p>@Ramanjulu </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/111145445482763602422/">juanp...@gmail.com</a
+>,
+ 
+ </span>
+ <span class="date" title="Fri Sep 13 20:41:13 2013">Sep 13, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>The scanner of the conf file needs to be improved, and needs more feedback about the errors, took me about 40 minutes to make it work because it had some extra tab characters. </p><p>The conf file only works if it is in the root directory of the project, at least I wasn&#x27;t able to make it work somewhere else. </p><p>And finally the exclude files need a complete path, not just it&#x27;s name as in this example <a href="http://code.google.com/p/js-test-driver/wiki/ConfigurationFile" rel="nofollow">http://code.google.com/p/js-test-driver/wiki/ConfigurationFile</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ <a class="userlink"
+ href="/u/114799368735285647468/">oska...@bergstroms.org</a
+>,
+ 
+ </span>
+ <span class="date" title="Wed Dec 18 05:16:31 2013">Dec 18, 2013</span>
+ <div>
+<div class="commentcontent">
+<p>Question: Is there a way to make the &quot;tree like&quot; resultlist automatically expand it self? I don&#x27;t like having to click on the plus signs after each run to expand it &quot;manually&quot; every time i want to examine the results. Somebody, please! implement such a feature for me (and i will bow to you!). :-) </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muellert...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Aug  6 01:12:30 2014">Aug 6, 2014</span>
+ <div>
+<div class="commentcontent">
+<p>Testinstallation successful! </p><p>Version: Luna Release (4.4.0) Build id: 20140612-0600 JS Test Driver:	1.3.4.e	 Win7 64bit </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+ 
+
+ 
+ <div class="artifactcomment"
+ 
+ >
+ 
+ 
+ 
+ 
+ 
+ 
+ <span class="author">Comment
+ 
+ by 
+ 
+ 
+
+ 
+ <span class="userlink">muaraang...@gmail.com</span>,
+ 
+ </span>
+ <span class="date" title="Wed Apr 29 19:43:12 2015">Apr 29, 2015</span>
+ <div>
+<div class="commentcontent">
+<p><a href="http://anekajaringmurah.blogspot.com/" rel="nofollow">http://anekajaringmurah.blogspot.com/</a> <a href="http://pusatjaringmurah.blogspot.com/" rel="nofollow">http://pusatjaringmurah.blogspot.com/</a> <a href="http://anekajaringpengaman.blogspot.com/" rel="nofollow">http://anekajaringpengaman.blogspot.com/</a> <a href="http://agenjaringpengaman.blogspot.com/" rel="nofollow">http://agenjaringpengaman.blogspot.com/</a> <a href="http://jaringpengamanfutsal.blogspot.com/" rel="nofollow">http://jaringpengamanfutsal.blogspot.com/</a> <a href="http://jaring-pengamanmurah.blogspot.com/" rel="nofollow">http://jaring-pengamanmurah.blogspot.com/</a> <a href="http://jaringcenter.blogspot.com/" rel="nofollow">http://jaringcenter.blogspot.com/</a> <a href="http://agenjaringjakata.blogspot.com/" rel="nofollow">http://agenjaringjakata.blogspot.com/</a> <a href="http://jualjaringpengamanmurah.blogspot.com/" rel="nofollow">http://jualjaringpengamanmurah.blogspot.com/</a> <a href="http://jaringsafetyjakarta.blogspot.com/" rel="nofollow">http://jaringsafetyjakarta.blogspot.com/</a> <a href="http://jaringpengaman-murah.blogspot.com/" rel="nofollow">http://jaringpengaman-murah.blogspot.com/</a> <a href="http://jaringmurah.blogspot.com/" rel="nofollow">http://jaringmurah.blogspot.com/</a> <a href="http://jaring-murah.blogspot.com/" rel="nofollow">http://jaring-murah.blogspot.com/</a> <a href="http://jaringpengamanmurah.blogspot.com/" rel="nofollow">http://jaringpengamanmurah.blogspot.com/</a> <a href="http://jaringbangunan.blogspot.com/" rel="nofollow">http://jaringbangunan.blogspot.com/</a> <a href="http://agenjaringsafety.blogspot.com/" rel="nofollow">http://agenjaringsafety.blogspot.com/</a> <a href="http://sentral-jaring.blogspot.com/" rel="nofollow">http://sentral-jaring.blogspot.com/</a> <a href="http://sentraljaring.blogspot.com/" rel="nofollow">http://sentraljaring.blogspot.com/</a> <a href="http://tokojaringpengaman.blogspot.com/" rel="nofollow">http://tokojaringpengaman.blogspot.com/</a> <a href="http://pusatjaringjakarta.blogspot.com/" rel="nofollow">http://pusatjaringjakarta.blogspot.com/</a> <a href="http://tokojaringpengamanmurah.blogspot.com/" rel="nofollow">http://tokojaringpengamanmurah.blogspot.com/</a> <a href="http://jualjaringsafetymurah.blogspot.com/" rel="nofollow">http://jualjaringsafetymurah.blogspot.com/</a> <a href="https://pancasamudera.wordpress.com/" rel="nofollow">https://pancasamudera.wordpress.com/</a> <a href="https://pasangjaringfutsal.wordpress.com/" rel="nofollow">https://pasangjaringfutsal.wordpress.com/</a> <a href="https://jualtambangmurah.wordpress.com/" rel="nofollow">https://jualtambangmurah.wordpress.com/</a> <a href="https://tokojaring.wordpress.com/" rel="nofollow">https://tokojaring.wordpress.com/</a> <a href="https://jualjaringfutsal.wordpress.com/" rel="nofollow">https://jualjaringfutsal.wordpress.com/</a> <a href="https://jaringfutsal.wordpress.com/" rel="nofollow">https://jaringfutsal.wordpress.com/</a> </p>
+</div>
+ 
+ 
+ </div>
+ </div>
+ 
+
+</div>
+</div>
+
+ 
+
+
+ <script type="text/javascript">
+ function delComment(sequence_num, create_time, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.create_time.value = create_time;
+ f.mode.value = delete_mode;
+ f.submit();
+ return false;
+ }
+ </script>
+
+
+ </div>
+ 
+ 
+ 
+ 
+ <br>
+ <div class="artifactcomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FUsingTheEclipsePlugin&amp;followup=https%3A%2F%2Fcode.google.com%2Fp%2Fjs-test-driver%2Fwiki%2FUsingTheEclipsePlugin"
+ >Sign in</a> to add a comment
+ </div>
+ 
+ 
+ 
+ 
+ <form name="delcom" action="../w/delComment.do" method="POST">
+ <input type="hidden" name="sequence_num" value="" >
+ <input type="hidden" name="create_time" value="" >
+ <input type="hidden" name="mode" value="" >
+ <input type="hidden" name="pagename" value="UsingTheEclipsePlugin" >
+ <input type="hidden" name="token" value="" >
+ </form>
+
+
+ <script src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/prettify/prettify.js"></script>
+ <script type="text/javascript">
+ prettyPrint();
+ </script>
+
+<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/dit_scripts.js"></script>
+
+
+
+  
+ 
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_core.js"></script>
+ 
+ <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/8599073060794244502/js/ph_dwiki.js"></script>
+ 
+ 
+ 
+ 
+</div> 
+
+<div id="footer" dir="ltr">
+ <div class="text">
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ </div>
+</div>
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
+
